@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "WhatsApp",
-    value: "+55 51 9 8194-4545",
-    href: "https://wa.me/5551981944545",
+    value: "+55 82 8178-8608",
+    href: "https://wa.me/5582981788608",
   },
   {
     icon: MapPin,
@@ -119,7 +119,7 @@ const ContactSection = () => {
             className="mt-12 text-center"
           >
             <a
-              href="https://wa.me/5551981944545?text=Olá! Gostaria de conversar sobre um projeto."
+              href="https://wa.me/5582981788608?text=Olá! Gostaria de conversar sobre um projeto."
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-gold-light hover:shadow-lg glow-gold-sm"
