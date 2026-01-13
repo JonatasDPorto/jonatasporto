@@ -11,13 +11,19 @@ git commit -m "Preparar para deploy no GitHub Pages"
 git push origin main
 ```
 
-### 2. Habilitar GitHub Pages
+### 2. Habilitar GitHub Pages (IMPORTANTE - FAÇA ISSO PRIMEIRO!)
+
+⚠️ **Você DEVE fazer isso ANTES de fazer push do código, ou o workflow vai falhar!**
 
 1. Vá para o seu repositório no GitHub
 2. Clique em **Settings** (Configurações)
 3. No menu lateral, clique em **Pages**
-4. Em **Source**, selecione **GitHub Actions**
+4. Em **Source**, selecione **GitHub Actions** (não "Deploy from a branch")
 5. Salve as configurações
+
+**Nota:** Se você não vir a opção "GitHub Actions", pode ser que o repositório ainda não tenha o workflow. Nesse caso:
+- Faça o push primeiro
+- Depois volte em Settings > Pages e selecione "GitHub Actions"
 
 ### 3. Deploy Automático
 
