@@ -5,10 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  // Para GitHub Pages: se o repositório não for username.github.io, 
-  // descomente a linha abaixo e substitua 'nome-do-repositorio' pelo nome do seu repo
-  // const base = '/nome-do-repositorio/';
-  const base = '/';
+  // Para GitHub Pages: ajuste o base path conforme o nome do seu repositório
+  // Se o repo for 'username.github.io', use '/'
+  // Se o repo tiver outro nome (como 'jonatasporto'), use '/nome-do-repo/'
+  const base = '/jonatasporto/';
   
   return {
     base,
