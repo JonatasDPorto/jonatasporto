@@ -36,11 +36,11 @@ const Header = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="container px-4 md:px-8">
-          <div className="flex items-center justify-between h-20">
+        <div className="container px-4 sm:px-6 md:px-8">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-2">
-              <span className="text-2xl font-display font-bold">
+              <span className="text-xl sm:text-2xl font-display font-bold">
                 <span className="text-primary">J</span>ônatas
               </span>
             </a>

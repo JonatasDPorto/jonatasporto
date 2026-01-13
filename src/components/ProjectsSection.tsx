@@ -3,10 +3,9 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
-import projectBuzzlabs from "@/assets/project-buzzlabs.jpg";
+import projectBuzzlabs from "@/assets/agendamento.png";
 import projectDilemma from "@/assets/project-dilemma.png";
-import projectBots from "@/assets/project-bots.jpg";
-import projectAutomation from "@/assets/project-automation.jpg";
+import projectAutomation from "@/assets/automacao.webp";
 
 const projects = [
   {
@@ -19,17 +18,17 @@ const projects = [
   },
   {
     title: "Dilemma Insights",
-    category: "Plataforma Web",
+    category: "Aplicativo Mobile",
     image: projectDilemma,
     description:
-      "Plataforma de insights e análise de dados desenvolvida para a Dilemma Insights. Interface moderna e intuitiva para visualização de dados e tomada de decisões estratégicas.",
-    technologies: ["React", "TypeScript", "Data Analytics", "UI/UX"],
+      "Plataforma de educação com simulações e analises para sala de aula para a Dilemma Insights. Interface moderna e intuitiva para visualização de dados e tomada de decisões estratégicas.",
+    technologies: ["Flutter", "NodeJS", "Data Analytics", "Redis"],
     link: "https://www.dilemmainsights.com/",
   },
   {
     title: "Bots para Plataformas",
     category: "Automação",
-    image: projectBots,
+    image: "https://conteudo.imguol.com.br/c/noticias/94/2018/10/07/whatsapp-telegram-facebopok-messenger-logo-icone-1538930160440_v2_1920x1282.jpg",
     description:
       "Desenvolvimento de bots inteligentes para Telegram, Discord, Slack e WhatsApp. Automação de processos, integração com APIs e gerenciamento de comunidades.",
     technologies: ["Node.js", "Python", "Telegram API", "WhatsApp API"],
@@ -49,26 +48,26 @@ const ProjectsSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="projects" className="py-24 bg-background relative">
-      <div className="container px-4 md:px-8" ref={ref}>
+    <section id="projects" className="py-16 sm:py-20 md:py-24 bg-background relative">
+      <div className="container px-4 sm:px-6 md:px-8" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <span className="text-primary font-medium tracking-wider uppercase text-sm">
+          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">
             Portfólio
           </span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold mt-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mt-3 sm:mt-4">
             Meus <span className="text-gradient">Projetos</span>
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <p className="text-muted-foreground mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base px-4 sm:px-0">
             Confira alguns dos projetos que desenvolvi ao longo da minha carreira
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -95,9 +94,9 @@ const ProjectsSection = () => {
               </div>
 
               {/* Project Info */}
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-display font-bold group-hover:text-primary transition-colors">
+              <div className="p-4 sm:p-6">
+                <div className="flex items-center justify-between mb-2 sm:mb-3 gap-2">
+                  <h3 className="text-lg sm:text-xl font-display font-bold group-hover:text-primary transition-colors flex-1">
                     {project.title}
                   </h3>
                   {project.link && (
@@ -105,22 +104,22 @@ const ProjectsSection = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0"
                     >
-                      <ExternalLink className="w-5 h-5" />
+                      <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
                   )}
                 </div>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
                 {/* Technologies */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium"
+                      className="bg-primary/10 text-primary px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium"
                     >
                       {tech}
                     </span>
