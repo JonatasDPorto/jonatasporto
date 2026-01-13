@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
 import projectBuzzlabs from "@/assets/project-buzzlabs.jpg";
-import projectDilemma from "@/assets/project-dilemma.jpg";
+import projectDilemma from "@/assets/project-dilemma.png";
 import projectBots from "@/assets/project-bots.jpg";
 import projectAutomation from "@/assets/project-automation.jpg";
 
@@ -18,12 +18,13 @@ const projects = [
     technologies: ["Clojure", "ClojureScript", "Re-frame", "Reagent"],
   },
   {
-    title: "Aplicações Flutter",
-    category: "Mobile",
+    title: "Dilemma Insights",
+    category: "Plataforma Web",
     image: projectDilemma,
     description:
-      "Desenvolvimento completo de aplicações mobile em Flutter utilizando design patterns como BLOC e Clean Dart. Animações avançadas com Rive e Flare, integração nativa via MethodChannel.",
-    technologies: ["Flutter", "Dart", "BLOC", "Rive", "Firebase"],
+      "Plataforma de insights e análise de dados desenvolvida para a Dilemma Insights. Interface moderna e intuitiva para visualização de dados e tomada de decisões estratégicas.",
+    technologies: ["React", "TypeScript", "Data Analytics", "UI/UX"],
+    link: "https://www.dilemmainsights.com/",
   },
   {
     title: "Bots para Plataformas",
@@ -95,9 +96,21 @@ const ProjectsSection = () => {
 
               {/* Project Info */}
               <div className="p-6">
-                <h3 className="text-xl font-display font-bold mb-3 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-display font-bold group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
+                </div>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
