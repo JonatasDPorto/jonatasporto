@@ -1,0 +1,137 @@
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
+
+const contactInfo = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "jonatas.dourado@souunit.com.br",
+    href: "mailto:jonatas.dourado@souunit.com.br",
+  },
+  {
+    icon: Phone,
+    label: "WhatsApp",
+    value: "+55 51 9 8194-4545",
+    href: "https://wa.me/5551981944545",
+  },
+  {
+    icon: MapPin,
+    label: "Localização",
+    value: "União dos Palmares - AL, Brasil",
+    href: "#",
+  },
+];
+
+const socialLinks = [
+  {
+    icon: Github,
+    label: "GitHub",
+    href: "https://github.com/JonatasDPorto",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/jonatasporto",
+  },
+];
+
+const ContactSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <section id="contact" className="py-24 bg-card relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 left-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+
+      <div className="container px-4 md:px-8 relative z-10" ref={ref}>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <span className="text-primary font-medium tracking-wider uppercase text-sm">Contato</span>
+          <h2 className="text-4xl md:text-5xl font-display font-bold mt-4">
+            Vamos <span className="text-gradient">Conversar?</span>
+          </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Estou disponível para projetos freelance e oportunidades de trabalho.
+            Entre em contato e vamos transformar sua ideia em realidade.
+          </p>
+        </motion.div>
+
+        <div className="max-w-4xl mx-auto">
+          {/* Contact cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {contactInfo.map((info, index) => (
+              <motion.a
+                key={info.label}
+                href={info.href}
+                target={info.href.startsWith("http") ? "_blank" : undefined}
+                rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group bg-background p-6 rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:glow-gold-sm text-center"
+              >
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                  <info.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">{info.label}</h3>
+                <p className="text-muted-foreground text-sm break-all">{info.value}</p>
+              </motion.a>
+            ))}
+          </div>
+
+          {/* Social links */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-center"
+          >
+            <p className="text-muted-foreground mb-6">Me encontre nas redes</p>
+            <div className="flex justify-center gap-4">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group w-14 h-14 bg-background border border-border rounded-full flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all duration-300"
+                  aria-label={link.label}
+                >
+                  <link.icon className="w-6 h-6 group-hover:text-primary transition-colors" />
+                </a>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-12 text-center"
+          >
+            <a
+              href="https://wa.me/5551981944545?text=Olá! Gostaria de conversar sobre um projeto."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-gold-light hover:shadow-lg glow-gold-sm"
+            >
+              <Send className="w-5 h-5" />
+              Iniciar Conversa
+            </a>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
