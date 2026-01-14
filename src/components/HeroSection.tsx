@@ -73,9 +73,9 @@ const HeroSection = () => {
             >
               <span className="text-foreground">Jônatas</span>
               <br />
-              <span className="text-foreground">Dourado</span>
+              <span className="text-gradient">Dourado</span>
               <br />
-              <span className="text-gradient">Porto</span>
+              <span className="text-foreground">Porto</span>
             </motion.h1>
 
             <motion.p 
