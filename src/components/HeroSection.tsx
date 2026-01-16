@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import profilePhoto from "@/assets/profile-photo.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section 
       id="home"
@@ -62,7 +64,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Mobile Developer Full Stack
+              {t("hero.role")}
             </motion.span>
             
             <motion.h1 
@@ -71,11 +73,11 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <span className="text-foreground">Jônatas</span>
+              <span className="text-foreground">{t("hero.name")}</span>
               <br />
-              <span className="text-gradient">Dourado</span>
+              <span className="text-gradient">{t("hero.name2")}</span>
               <br />
-              <span className="text-foreground">Porto</span>
+              <span className="text-foreground">{t("hero.name3")}</span>
             </motion.h1>
 
             <motion.p 
@@ -84,9 +86,7 @@ const HeroSection = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              Com 6 anos de experiência em desenvolvimento mobile, 
-              especializado em Flutter e desenvolvimento nativo Android, 
-              criando aplicações inovadoras e experiências excepcionais.
+              {t("hero.description")}
             </motion.p>
 
             <motion.div 
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 href="#contact"
                 className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-gold-light hover:shadow-lg glow-gold-sm w-full sm:w-auto"
               >
-                Ver Portfólio
+                {t("hero.viewPortfolio")}
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               

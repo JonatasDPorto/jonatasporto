@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+# Portfólio - Jônatas Dourado Porto
 
-## Project info
+Portfólio pessoal desenvolvido com React, TypeScript, Vite e Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Tecnologias
 
-## How can I edit this code?
+Este projeto foi construído com:
 
-There are several ways of editing your application.
+- **Vite** - Build tool e dev server
+- **React** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Tailwind CSS** - Framework CSS utility-first
+- **shadcn-ui** - Componentes UI baseados em Radix UI
+- **React Router** - Roteamento para aplicações React
+- **i18next** - Internacionalização (PT/EN)
+- **Framer Motion** - Biblioteca de animações
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## 📦 Instalação
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone o repositório
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navegue até o diretório do projeto
+cd jonatasporto
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Scripts Disponíveis
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria build de produção
+- `npm run preview` - Preview do build de produção
+- `npm run lint` - Executa o linter
+- `npm run deploy` - Build e deploy para GitHub Pages
 
-**Use GitHub Codespaces**
+## 🌐 Internacionalização
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+O site suporta dois idiomas:
 
-## What technologies are used for this project?
+- **Português** - Rota padrão (`/`)
+- **Inglês** - Rota `/en`
 
-This project is built with:
+O idioma pode ser alterado através do seletor no header do site.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 Estrutura do Projeto
 
-## How can I deploy this project?
+```
+src/
+├── components/     # Componentes React
+├── pages/         # Páginas da aplicação
+├── i18n/          # Configuração de traduções
+│   └── locales/   # Arquivos de tradução (pt.json, en.json)
+├── assets/         # Imagens e recursos estáticos
+├── hooks/          # Custom hooks
+└── lib/            # Utilitários
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🚢 Deploy
 
-## Can I connect a custom domain to my Lovable project?
+O projeto está configurado para deploy no GitHub Pages. O build é feito automaticamente através do GitHub Actions.
 
-Yes, you can!
+Para fazer deploy manual:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```sh
+npm run deploy
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📝 Licença
+
+Este projeto é de uso pessoal.

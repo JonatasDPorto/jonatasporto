@@ -1,45 +1,47 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
 
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "jonatas.dourado@souunit.com.br",
-    href: "mailto:jonatas.dourado@souunit.com.br",
-  },
-  {
-    icon: Phone,
-    label: "WhatsApp",
-    value: "+55 82 8178-8608",
-    href: "https://wa.me/5582981788608",
-  },
-  {
-    icon: MapPin,
-    label: "Localização",
-    value: "União dos Palmares - AL, Brasil",
-    href: "#",
-  },
-];
-
-const socialLinks = [
-  {
-    icon: Github,
-    label: "GitHub",
-    href: "https://github.com/JonatasDPorto",
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    href: "https://linkedin.com/in/jonatasporto",
-  },
-];
-
 const ContactSection = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: t("contact.email"),
+      value: "jonatas.dourado@souunit.com.br",
+      href: "mailto:jonatas.dourado@souunit.com.br",
+    },
+    {
+      icon: Phone,
+      label: t("contact.whatsapp"),
+      value: "+55 82 8178-8608",
+      href: "https://wa.me/5582981788608",
+    },
+    {
+      icon: MapPin,
+      label: t("contact.location"),
+      value: t("contact.locationValue"),
+      href: "#",
+    },
+  ];
+
+  const socialLinks = [
+    {
+      icon: Github,
+      label: "GitHub",
+      href: "https://github.com/JonatasDPorto",
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      href: "https://linkedin.com/in/jonatasporto",
+    },
+  ];
 
   return (
     <section id="contact" className="py-16 sm:py-20 md:py-24 bg-card relative overflow-hidden">
@@ -54,13 +56,20 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">Contato</span>
+          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">{t("contact.title")}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mt-3 sm:mt-4">
-            Vamos <span className="text-gradient">Conversar?</span>
+            {t("contact.heading").includes("Vamos") ? (
+              <>
+                Vamos <span className="text-gradient">Conversar?</span>
+              </>
+            ) : (
+              <>
+                Let's <span className="text-gradient">Talk?</span>
+              </>
+            )}
           </h2>
           <p className="text-muted-foreground mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base px-4 sm:px-0">
-            Estou disponível para projetos freelance e oportunidades de trabalho.
-            Entre em contato e vamos transformar sua ideia em realidade.
+            {t("contact.description")}
           </p>
         </motion.div>
 
@@ -94,7 +103,7 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-center"
           >
-            <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">Me encontre nas redes</p>
+            <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">{t("contact.findMeOn")}</p>
             <div className="flex justify-center gap-3 sm:gap-4">
               {socialLinks.map((link) => (
                 <a
@@ -125,7 +134,7 @@ const ContactSection = () => {
               className="group inline-flex items-center gap-2 sm:gap-3 bg-primary text-primary-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 hover:bg-gold-light hover:shadow-lg glow-gold-sm"
             >
               <Send className="w-4 h-4 sm:w-5 sm:h-5" />
-              Iniciar Conversa
+              {t("contact.startConversation")}
             </a>
           </motion.div>
         </div>

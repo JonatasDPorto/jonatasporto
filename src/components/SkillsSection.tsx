@@ -1,42 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-
-const skillCategories = [
-  {
-    title: "Mobile Development",
-    skills: [
-      { name: "Flutter/Dart", level: 95 },
-      { name: "Android (Java/Kotlin)", level: 85 },
-      { name: "iOS Development", level: 75 },
-    ],
-  },
-  {
-    title: "Back-end",
-    skills: [
-      { name: "Node.js", level: 90 },
-      { name: "Firebase", level: 88 },
-      { name: "Redis", level: 80 },
-      { name: "Clojure", level: 75 },
-    ],
-  },
-  {
-    title: "Front-end",
-    skills: [
-      { name: "React/TypeScript", level: 85 },
-      { name: "ClojureScript", level: 75 },
-      { name: "Figma to Code", level: 90 },
-    ],
-  },
-  {
-    title: "AI & Data",
-    skills: [
-      { name: "PyTorch", level: 70 },
-      { name: "Pandas/Numpy", level: 75 },
-      { name: "Machine Learning", level: 68 },
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const technologies = [
   "Flutter", "Dart", "Kotlin", "Java", "Node.js", "TypeScript", "React", 
@@ -45,8 +10,45 @@ const technologies = [
 ];
 
 const SkillsSection = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const skillCategories = [
+    {
+      title: t("skills.categories.mobile.title"),
+      skills: [
+        { name: t("skills.categories.mobile.skills.flutter"), level: 95 },
+        { name: t("skills.categories.mobile.skills.android"), level: 85 },
+        { name: t("skills.categories.mobile.skills.ios"), level: 75 },
+      ],
+    },
+    {
+      title: t("skills.categories.backend.title"),
+      skills: [
+        { name: t("skills.categories.backend.skills.nodejs"), level: 90 },
+        { name: t("skills.categories.backend.skills.firebase"), level: 88 },
+        { name: t("skills.categories.backend.skills.redis"), level: 80 },
+        { name: t("skills.categories.backend.skills.clojure"), level: 75 },
+      ],
+    },
+    {
+      title: t("skills.categories.frontend.title"),
+      skills: [
+        { name: t("skills.categories.frontend.skills.react"), level: 85 },
+        { name: t("skills.categories.frontend.skills.clojurescript"), level: 75 },
+        { name: t("skills.categories.frontend.skills.figma"), level: 90 },
+      ],
+    },
+    {
+      title: t("skills.categories.ai.title"),
+      skills: [
+        { name: t("skills.categories.ai.skills.pytorch"), level: 70 },
+        { name: t("skills.categories.ai.skills.pandas"), level: 75 },
+        { name: t("skills.categories.ai.skills.ml"), level: 68 },
+      ],
+    },
+  ];
 
   return (
     <section id="skills" className="py-16 sm:py-20 md:py-24 bg-card relative overflow-hidden">
@@ -60,9 +62,17 @@ const SkillsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">Habilidades</span>
+          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">{t("skills.title")}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mt-3 sm:mt-4">
-            Skills & <span className="text-gradient">Tecnologias</span>
+            {t("skills.heading").includes("Skills &") ? (
+              <>
+                Skills & <span className="text-gradient">Tecnologias</span>
+              </>
+            ) : (
+              <>
+                Skills & <span className="text-gradient">Technologies</span>
+              </>
+            )}
           </h2>
         </motion.div>
 
@@ -108,7 +118,7 @@ const SkillsSection = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center"
         >
-          <h3 className="text-lg sm:text-xl font-display font-bold mb-6 sm:mb-8">Tecnologias que Utilizo</h3>
+          <h3 className="text-lg sm:text-xl font-display font-bold mb-6 sm:mb-8">{t("skills.technologiesUsed")}</h3>
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-2 sm:px-0">
             {technologies.map((tech, index) => (
               <motion.span

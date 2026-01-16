@@ -1,6 +1,8 @@
 import { Heart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -9,13 +11,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4 text-center md:text-left">
           <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 text-muted-foreground text-xs sm:text-sm">
             <span>© {currentYear} Jônatas Dourado Porto.</span>
-            <span className="hidden sm:inline">Todos os direitos reservados.</span>
-            <span className="sm:hidden">Todos os direitos reservados.</span>
+            <span className="hidden sm:inline">{t("footer.rights")}</span>
+            <span className="sm:hidden">{t("footer.rights")}</span>
           </div>
           <div className="flex items-center gap-1.5 sm:gap-2 text-muted-foreground text-xs sm:text-sm">
-            <span>Feito com</span>
+            <span>{t("footer.madeWith")}</span>
             <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary fill-primary" />
-            <span>em Alagoas, Brasil</span>
+            <span>{t("footer.in")}</span>
           </div>
         </div>
       </div>

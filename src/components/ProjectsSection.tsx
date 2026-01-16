@@ -1,51 +1,49 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { ExternalLink, Github } from "lucide-react";
 
 import projectBuzzlabs from "@/assets/agendamento.png";
 import projectDilemma from "@/assets/project-dilemma.png";
 import projectAutomation from "@/assets/automacao.webp";
 
-const projects = [
-  {
-    title: "Sistema de Agendamento",
-    category: "Full-Stack",
-    image: projectBuzzlabs,
-    description:
-      "Aplicação de agendamento e reservas desenvolvida com Clojure, ClojureScript, shadow-cljs, re-frame e reagent. Arquitetura reativa com gerenciamento de estado avançado e componentes modulares.",
-    technologies: ["Clojure", "ClojureScript", "Re-frame", "Reagent"],
-  },
-  {
-    title: "Dilemma Insights",
-    category: "Aplicativo Mobile",
-    image: projectDilemma,
-    description:
-      "Plataforma de educação com simulações e analises para sala de aula para a Dilemma Insights. Interface moderna e intuitiva para visualização de dados e tomada de decisões estratégicas.",
-    technologies: ["Flutter", "NodeJS", "Data Analytics", "Redis"],
-    link: "https://www.dilemmainsights.com/",
-  },
-  {
-    title: "Bots para Plataformas",
-    category: "Automação",
-    image: "https://conteudo.imguol.com.br/c/noticias/94/2018/10/07/whatsapp-telegram-facebopok-messenger-logo-icone-1538930160440_v2_1920x1282.jpg",
-    description:
-      "Desenvolvimento de bots inteligentes para Telegram, Discord, Slack e WhatsApp. Automação de processos, integração com APIs e gerenciamento de comunidades.",
-    technologies: ["Node.js", "Python", "Telegram API", "WhatsApp API"],
-  },
-  {
-    title: "Web Scraping & Automação",
-    category: "Backend",
-    image: projectAutomation,
-    description:
-      "Soluções de web scraping e automação de processos. Extração de dados em larga escala, pipelines de ETL e integração com sistemas externos.",
-    technologies: ["Python", "Selenium", "BeautifulSoup", "Redis"],
-  },
-];
-
 const ProjectsSection = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const projects = [
+    {
+      title: t("projects.items.scheduling.title"),
+      category: t("projects.items.scheduling.category"),
+      image: projectBuzzlabs,
+      description: t("projects.items.scheduling.description"),
+      technologies: ["Clojure", "ClojureScript", "Re-frame", "Reagent"],
+    },
+    {
+      title: t("projects.items.dilemma.title"),
+      category: t("projects.items.dilemma.category"),
+      image: projectDilemma,
+      description: t("projects.items.dilemma.description"),
+      technologies: ["Flutter", "NodeJS", "Data Analytics", "Redis"],
+      link: "https://www.dilemmainsights.com/",
+    },
+    {
+      title: t("projects.items.bots.title"),
+      category: t("projects.items.bots.category"),
+      image: "https://conteudo.imguol.com.br/c/noticias/94/2018/10/07/whatsapp-telegram-facebopok-messenger-logo-icone-1538930160440_v2_1920x1282.jpg",
+      description: t("projects.items.bots.description"),
+      technologies: ["Node.js", "Python", "Telegram API", "WhatsApp API"],
+    },
+    {
+      title: t("projects.items.automation.title"),
+      category: t("projects.items.automation.category"),
+      image: projectAutomation,
+      description: t("projects.items.automation.description"),
+      technologies: ["Python", "Selenium", "BeautifulSoup", "Redis"],
+    },
+  ];
 
   return (
     <section id="projects" className="py-16 sm:py-20 md:py-24 bg-background relative">
@@ -57,13 +55,21 @@ const ProjectsSection = () => {
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">
-            Portfólio
+            {t("projects.title")}
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mt-3 sm:mt-4">
-            Meus <span className="text-gradient">Projetos</span>
+            {t("projects.heading").includes("Meus") ? (
+              <>
+                Meus <span className="text-gradient">Projetos</span>
+              </>
+            ) : (
+              <>
+                My <span className="text-gradient">Projects</span>
+              </>
+            )}
           </h2>
           <p className="text-muted-foreground mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base px-4 sm:px-0">
-            Confira alguns dos projetos que desenvolvi ao longo da minha carreira
+            {t("projects.description")}
           </p>
         </motion.div>
 

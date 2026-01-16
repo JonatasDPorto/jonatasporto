@@ -1,35 +1,37 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { GraduationCap, Award, BookOpen } from "lucide-react";
 
-const education = [
-  {
-    icon: GraduationCap,
-    title: "Bacharelado em Ciência da Computação",
-    institution: "Universidade Tiradentes - UNIT",
-    period: "Dez 2021",
-    type: "Graduação",
-  },
-  {
-    icon: Award,
-    title: "MIT Global Startup Labs",
-    institution: "Massachusetts Institute of Technology",
-    period: "Jan 2020",
-    type: "Programa",
-  },
-  {
-    icon: BookOpen,
-    title: "Pesquisa Científica",
-    institution: "Uso de machine learning para análise de indicadores sociais",
-    period: "Set 2020 ~ Jun 2021",
-    type: "Pesquisa",
-  },
-];
-
 const EducationSection = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const education = [
+    {
+      icon: GraduationCap,
+      title: t("education.items.degree.title"),
+      institution: t("education.items.degree.institution"),
+      period: t("education.items.degree.period"),
+      type: t("education.items.degree.type"),
+    },
+    {
+      icon: Award,
+      title: t("education.items.mit.title"),
+      institution: t("education.items.mit.institution"),
+      period: t("education.items.mit.period"),
+      type: t("education.items.mit.type"),
+    },
+    {
+      icon: BookOpen,
+      title: t("education.items.research.title"),
+      institution: t("education.items.research.institution"),
+      period: t("education.items.research.period"),
+      type: t("education.items.research.type"),
+    },
+  ];
 
   return (
     <section id="education" className="py-16 sm:py-20 md:py-24 bg-background relative">
@@ -40,9 +42,17 @@ const EducationSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">Educação</span>
+          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">{t("education.title")}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mt-3 sm:mt-4">
-            Formação <span className="text-gradient">Acadêmica</span>
+            {t("education.heading").includes("Formação") ? (
+              <>
+                Formação <span className="text-gradient">Acadêmica</span>
+              </>
+            ) : (
+              <>
+                Academic <span className="text-gradient">Background</span>
+              </>
+            )}
           </h2>
         </motion.div>
 

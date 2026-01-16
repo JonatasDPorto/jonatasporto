@@ -1,34 +1,36 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Code2, Smartphone, Server, Sparkles } from "lucide-react";
 
-const highlights = [
-  {
-    icon: Smartphone,
-    title: "Mobile Development",
-    description: "Flutter & Android Nativo",
-  },
-  {
-    icon: Server,
-    title: "Back-end",
-    description: "Node.js, Redis, Firebase",
-  },
-  {
-    icon: Code2,
-    title: "Full Stack",
-    description: "Clojure, React, TypeScript",
-  },
-  {
-    icon: Sparkles,
-    title: "AI & Automation",
-    description: "PyTorch, Pandas, Bots, n8n, Windmill",
-  },
-];
-
 const AboutSection = () => {
+  const { t, i18n } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const highlights = [
+    {
+      icon: Smartphone,
+      title: t("about.highlights.mobile.title"),
+      description: t("about.highlights.mobile.description"),
+    },
+    {
+      icon: Server,
+      title: t("about.highlights.backend.title"),
+      description: t("about.highlights.backend.description"),
+    },
+    {
+      icon: Code2,
+      title: t("about.highlights.fullstack.title"),
+      description: t("about.highlights.fullstack.description"),
+    },
+    {
+      icon: Sparkles,
+      title: t("about.highlights.ai.title"),
+      description: t("about.highlights.ai.description"),
+    },
+  ];
 
   return (
     <section id="about" className="py-16 sm:py-20 md:py-24 bg-card relative overflow-hidden">
@@ -43,10 +45,13 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">Sobre Mim</span>
+          <span className="text-primary font-medium tracking-wider uppercase text-xs sm:text-sm">{t("about.title")}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">
-            Transformando <span className="text-gradient">Ideias</span> em
-            <br className="hidden sm:block" /> Soluções Digitais
+            {t("about.heading").replace("Ideias", "").replace("Ideas", "").trim().split(" ").slice(0, -2).join(" ")}{" "}
+            <span className="text-gradient">{t("about.heading").includes("Ideias") ? "Ideias" : "Ideas"}</span>{" "}
+            {t("about.heading").includes("Ideias") ? "em" : "into"}
+            <br className="hidden sm:block" />{" "}
+            {t("about.heading").split(" ").slice(-2).join(" ")}
           </h2>
         </motion.div>
 
@@ -58,36 +63,27 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
-              Com 6 anos de experiência em desenvolvimento mobile, sou proficiente em 
-              <span className="text-primary font-medium"> Flutter </span> 
-              para criar aplicações Android e iOS, além de desenvolvimento nativo Android 
-              usando Java/Kotlin.
+              {t("about.paragraph1")}
             </p>
             <p className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
-              Meu foco é reproduzir interfaces e funcionalidades com precisão, seja a partir 
-              de Figma, AdobeXD ou outras ferramentas. Na área de back-end, tenho expertise 
-              em tecnologias como 
-              <span className="text-primary font-medium"> Node.js</span>,
-              <span className="text-primary font-medium"> Redis</span> e
-              <span className="text-primary font-medium"> Firebase</span>.
+              {t("about.paragraph2")}
             </p>
             <p className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed">
-              Também trabalho com desenvolvimento de bots para plataformas de comunicação, 
-              automações, web scraping e inteligência artificial.
+              {t("about.paragraph3")}
             </p>
 
             <div className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
               <div className="bg-secondary px-4 sm:px-6 py-3 sm:py-4 rounded-lg border border-border flex-1 sm:flex-none min-w-[120px] sm:min-w-0">
                 <span className="text-2xl sm:text-3xl font-display font-bold text-primary block">6+</span>
-                <p className="text-muted-foreground text-xs sm:text-sm mt-1">Anos de Experiência</p>
+                <p className="text-muted-foreground text-xs sm:text-sm mt-1">{t("about.yearsExperience")}</p>
               </div>
               <div className="bg-secondary px-4 sm:px-6 py-3 sm:py-4 rounded-lg border border-border flex-1 sm:flex-none min-w-[120px] sm:min-w-0">
                 <span className="text-2xl sm:text-3xl font-display font-bold text-primary block">50+</span>
-                <p className="text-muted-foreground text-xs sm:text-sm mt-1">Projetos Entregues</p>
+                <p className="text-muted-foreground text-xs sm:text-sm mt-1">{t("about.projectsDelivered")}</p>
               </div>
               <div className="bg-secondary px-4 sm:px-6 py-3 sm:py-4 rounded-lg border border-border flex-1 sm:flex-none min-w-[120px] sm:min-w-0">
                 <span className="text-2xl sm:text-3xl font-display font-bold text-primary block">100%</span>
-                <p className="text-muted-foreground text-xs sm:text-sm mt-1">Comprometimento</p>
+                <p className="text-muted-foreground text-xs sm:text-sm mt-1">{t("about.commitment")}</p>
               </div>
             </div>
           </motion.div>

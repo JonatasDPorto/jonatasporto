@@ -1,19 +1,22 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "Sobre" },
-  { href: "#projects", label: "Projetos" },
-  { href: "#skills", label: "Skills" },
-  { href: "#education", label: "Educação" },
-  { href: "#contact", label: "Contato" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  const navLinks = [
+    { href: "#home", label: t("nav.home") },
+    { href: "#about", label: t("nav.about") },
+    { href: "#projects", label: t("nav.projects") },
+    { href: "#skills", label: t("nav.skills") },
+    { href: "#education", label: t("nav.education") },
+    { href: "#contact", label: t("nav.contact") },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,13 +61,16 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* CTA Button */}
-            <a
-              href="#contact"
-              className="hidden md:inline-flex items-center px-6 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:bg-gold-light transition-all duration-300"
-            >
-              Fale Comigo
-            </a>
+            {/* Language Selector & CTA Button */}
+            <div className="hidden md:flex items-center gap-4">
+              <LanguageSelector />
+              <a
+                href="#contact"
+                className="inline-flex items-center px-6 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:bg-gold-light transition-all duration-300"
+              >
+                {t("nav.talkToMe")}
+              </a>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -102,16 +108,21 @@ const Header = () => {
                   {link.label}
                 </motion.a>
               ))}
-              <motion.a
-                href="#contact"
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-4 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold"
+                className="mt-4 flex flex-col items-center gap-4"
               >
-                Fale Comigo
-              </motion.a>
+                <LanguageSelector />
+                <a
+                  href="#contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold"
+                >
+                  {t("nav.talkToMe")}
+                </a>
+              </motion.div>
             </nav>
           </motion.div>
         )}

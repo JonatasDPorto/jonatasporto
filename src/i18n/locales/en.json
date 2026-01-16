@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact",
+    "talkToMe": "Talk to Me"
+  },
+  "hero": {
+    "role": "Mobile Developer Full Stack",
+    "name": "Jônatas",
+    "name2": "Dourado",
+    "name3": "Porto",
+    "description": "With 6 years of experience in mobile development, specialized in Flutter and native Android development, creating innovative applications and exceptional experiences.",
+    "viewPortfolio": "View Portfolio"
+  },
+  "about": {
+    "title": "About Me",
+    "heading": "Transforming Ideas into Digital Solutions",
+    "paragraph1": "With 6 years of experience in mobile development, I am proficient in Flutter to create Android and iOS applications, as well as native Android development using Java/Kotlin.",
+    "paragraph2": "My focus is to reproduce interfaces and functionalities with precision, whether from Figma, AdobeXD or other tools. In the back-end area, I have expertise in technologies such as Node.js, Redis and Firebase.",
+    "paragraph3": "I also work with bot development for communication platforms, automations, web scraping and artificial intelligence.",
+    "yearsExperience": "Years of Experience",
+    "projectsDelivered": "Projects Delivered",
+    "commitment": "Commitment",
+    "highlights": {
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "Flutter & Native Android"
+      },
+      "backend": {
+        "title": "Back-end",
+        "description": "Node.js, Redis, Firebase"
+      },
+      "fullstack": {
+        "title": "Full Stack",
+        "description": "Clojure, React, TypeScript"
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "description": "PyTorch, Pandas, Bots, n8n, Windmill"
+      }
+    }
+  },
+  "projects": {
+    "title": "Portfolio",
+    "heading": "My Projects",
+    "description": "Check out some of the projects I've developed throughout my career",
+    "items": {
+      "scheduling": {
+        "title": "Scheduling System",
+        "category": "Full-Stack",
+        "description": "Scheduling and booking application developed with Clojure, ClojureScript, shadow-cljs, re-frame and reagent. Reactive architecture with advanced state management and modular components."
+      },
+      "dilemma": {
+        "title": "Dilemma Insights",
+        "category": "Mobile App",
+        "description": "Education platform with simulations and classroom analysis for Dilemma Insights. Modern and intuitive interface for data visualization and strategic decision making."
+      },
+      "bots": {
+        "title": "Platform Bots",
+        "category": "Automation",
+        "description": "Development of intelligent bots for Telegram, Discord, Slack and WhatsApp. Process automation, API integration and community management."
+      },
+      "automation": {
+        "title": "Web Scraping & Automation",
+        "category": "Backend",
+        "description": "Web scraping and process automation solutions. Large-scale data extraction, ETL pipelines and integration with external systems."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "heading": "Skills & Technologies",
+    "technologiesUsed": "Technologies I Use",
+    "categories": {
+      "mobile": {
+        "title": "Mobile Development",
+        "skills": {
+          "flutter": "Flutter/Dart",
+          "android": "Android (Java/Kotlin)",
+          "ios": "iOS Development"
+        }
+      },
+      "backend": {
+        "title": "Back-end",
+        "skills": {
+          "nodejs": "Node.js",
+          "firebase": "Firebase",
+          "redis": "Redis",
+          "clojure": "Clojure"
+        }
+      },
+      "frontend": {
+        "title": "Front-end",
+        "skills": {
+          "react": "React/TypeScript",
+          "clojurescript": "ClojureScript",
+          "figma": "Figma to Code"
+        }
+      },
+      "ai": {
+        "title": "AI & Data",
+        "skills": {
+          "pytorch": "PyTorch",
+          "pandas": "Pandas/Numpy",
+          "ml": "Machine Learning"
+        }
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "heading": "Academic Background",
+    "items": {
+      "degree": {
+        "title": "Bachelor's Degree in Computer Science",
+        "institution": "Universidade Tiradentes - UNIT",
+        "period": "Dec 2021",
+        "type": "Graduation"
+      },
+      "mit": {
+        "title": "MIT Global Startup Labs",
+        "institution": "Massachusetts Institute of Technology",
+        "period": "Jan 2020",
+        "type": "Program"
+      },
+      "research": {
+        "title": "Scientific Research",
+        "institution": "Using machine learning for social indicator analysis",
+        "period": "Sep 2020 ~ Jun 2021",
+        "type": "Research"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "heading": "Let's Talk?",
+    "description": "I'm available for freelance projects and job opportunities. Get in touch and let's turn your idea into reality.",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "location": "Location",
+    "locationValue": "União dos Palmares - AL, Brazil",
+    "findMeOn": "Find me on social media",
+    "startConversation": "Start Conversation"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Made with",
+    "in": "in Alagoas, Brazil"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  }
+}
+
