@@ -174,9 +174,12 @@
     }
   },
   "notFound": {
-    "title": "404",
-    "message": "Oops! Page not found",
-    "returnHome": "Return to Home"
+    "title": "Page Not Found",
+    "message": "Oops! The page you're looking for doesn't exist.",
+    "subtitle": "It seems you got lost along the way. Let's help you get back!",
+    "returnHome": "Return to Home",
+    "goBack": "Go Back",
+    "helpText": "You can navigate to:"
   }
 }
 

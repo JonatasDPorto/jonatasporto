@@ -174,9 +174,12 @@
     }
   },
   "notFound": {
-    "title": "404",
-    "message": "Oops! Página não encontrada",
-    "returnHome": "Voltar para Home"
+    "title": "Página Não Encontrada",
+    "message": "Oops! A página que você está procurando não existe.",
+    "subtitle": "Parece que você se perdeu no caminho. Vamos te ajudar a voltar!",
+    "returnHome": "Voltar para Home",
+    "goBack": "Voltar",
+    "helpText": "Você pode navegar para:"
   }
 }
 
