@@ -2,11 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  // Para GitHub Pages: ajuste o base path conforme o nome do seu repositório
-  // Se o repo for 'username.github.io', use '/'
-  // Se o repo tiver outro nome (como 'jonatasporto'), use '/nome-do-repo/'
   const base = '/jonatasporto/';
   
   return {
@@ -14,6 +10,14 @@ export default defineConfig(({ mode }) => {
     server: {
       host: "::",
       port: 3254,
+      proxy: {
+        '/api/pub-dev': {
+          target: 'https://pub.dev',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api\/pub-dev/, '/api'),
+          secure: true,
+        },
+      },
     },
     plugins: [react()],
     resolve: {

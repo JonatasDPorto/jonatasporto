@@ -13,6 +13,7 @@ const Header = () => {
     { href: "#home", label: t("nav.home") },
     { href: "#about", label: t("nav.about") },
     { href: "#projects", label: t("nav.projects") },
+    { href: "#flutter-packages", label: t("nav.flutterPackages") },
     { href: "#skills", label: t("nav.skills") },
     { href: "#education", label: t("nav.education") },
     { href: "#contact", label: t("nav.contact") },

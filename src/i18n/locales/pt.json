@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "Sobre",
     "projects": "Projetos",
+    "flutterPackages": "Packages",
     "skills": "Skills",
     "education": "Educação",
     "contact": "Contato",
@@ -150,6 +151,27 @@
     "rights": "Todos os direitos reservados.",
     "madeWith": "Feito com",
     "in": "em Alagoas, Brasil"
+  },
+  "flutterPackages": {
+    "title": "Packages",
+    "heading": "Packages Flutter",
+    "description": "Pacotes Flutter que desenvolvi e publiquei no pub.dev",
+    "downloads": "downloads",
+    "totalDownloads": "total downloads",
+    "items": {
+      "fluxBorders": {
+        "title": "Flux Borders",
+        "description": "Um pacote Flutter de alta performance para criar bordas animadas e personalizáveis usando Fragment Shaders (GLSL). Inclui 13+ tipos de bordas únicas, desde Neon clássico até efeitos complexos como Fire, Liquid e Circuit."
+      },
+      "cleanDartGenerate": {
+        "title": "Clean Dart Generate",
+        "description": "Uma ferramenta CLI para gerar controllers e repositories para models seguindo os princípios da arquitetura Clean Dart do Fluterando. Automatiza a criação de estruturas de pastas e arquivos necessários."
+      },
+      "imageSliderButton": {
+        "title": "Image Slider Button",
+        "description": "Um slider com imagens para Flutter. Widget personalizável que permite criar sliders interativos com imagens, incluindo callbacks para eventos de início, atualização e fim do deslize."
+      }
+    }
   },
   "notFound": {
     "title": "404",
