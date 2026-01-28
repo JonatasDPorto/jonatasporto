@@ -65,7 +65,7 @@ jobs:
           cp -v public/manifest.json dist/ 2>/dev/null || echo "⚠️ manifest.json not found or already exists"
           cp -v public/favicon.ico dist/ 2>/dev/null || echo "⚠️ favicon.ico not found or already exists"
           cp -v public/profile-photo.jpg dist/ 2>/dev/null || echo "⚠️ profile-photo.jpg not found or already exists"
-          cp -v public/head_image.png dist/ 2>/dev/null || echo "⚠️ head_image.png not found or already exists"
+          cp -v public/head_image.jpg dist/ 2>/dev/null || echo "⚠️ head_image.jpg not found or already exists"
           echo "Final dist contents:"
           ls -la dist/ | grep -E "(index|manifest|favicon|head_image|404|sitemap|robots)" || echo "Some files may be in subdirectories"
 
