@@ -24,9 +24,9 @@ const StructuredData = () => {
     url: baseUrl,
     image: {
       "@type": "ImageObject",
-      url: `${baseUrl}/profile-photo.jpg`,
+      url: `${baseUrl}/og-image.jpg`,
       width: 1200,
-      height: 1200,
+      height: 630,
     },
     sameAs: [
       "https://github.com/JonatasDPorto",
@@ -186,7 +186,7 @@ const StructuredData = () => {
     "@id": `${baseUrl}#organization`,
     name: isEnglish ? "Jônatas Dourado Porto - Freelance Development" : "Jônatas Dourado Porto - Desenvolvimento Freelancer",
     url: baseUrl,
-    logo: `${baseUrl}/profile-photo.jpg`,
+    logo: `${baseUrl}/og-image.jpg`,
     founder: {
       "@id": `${baseUrl}#person`,
     },
