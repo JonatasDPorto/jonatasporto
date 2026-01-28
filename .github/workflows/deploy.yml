@@ -34,33 +34,40 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "Checking dist/index.html..."
+          if [ -f dist/index.html ]; then
+            echo "✅ index.html exists"
+            if grep -q "/src/main.tsx" dist/index.html; then
+              echo "❌ ERROR: index.html still has /src/main.tsx - build failed!"
+              exit 1
+            else
+              echo "✅ index.html is correctly built"
+            fi
+          else
+            echo "❌ ERROR: dist/index.html not found!"
+            exit 1
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
         continue-on-error: true
 
-      - name: Copy public files to dist
+      - name: Ensure public files are in dist
         run: |
-          if [ -f public/404.html ]; then
-            cp public/404.html dist/404.html
-          fi
-          if [ -f public/sitemap.xml ]; then
-            cp public/sitemap.xml dist/sitemap.xml
-          fi
-          if [ -f public/robots.txt ]; then
-            cp public/robots.txt dist/robots.txt
-          fi
-          if [ -f public/manifest.json ]; then
-            cp public/manifest.json dist/manifest.json
-          fi
-          if [ -f public/favicon.ico ]; then
-            cp public/favicon.ico dist/favicon.ico
-          fi
-          if [ -f public/profile-photo.jpg ]; then
-            cp public/profile-photo.jpg dist/profile-photo.jpg
-          fi
-          if [ -f public/head_image.png ]; then
-            cp public/head_image.png dist/head_image.png
-          fi
+          echo "Checking dist contents before copy..."
+          ls -la dist/ | head -10
+          echo "Copying public files..."
+          cp -v public/404.html dist/ 2>/dev/null || echo "⚠️ 404.html not found or already exists"
+          cp -v public/sitemap.xml dist/ 2>/dev/null || echo "⚠️ sitemap.xml not found or already exists"
+          cp -v public/robots.txt dist/ 2>/dev/null || echo "⚠️ robots.txt not found or already exists"
+          cp -v public/manifest.json dist/ 2>/dev/null || echo "⚠️ manifest.json not found or already exists"
+          cp -v public/favicon.ico dist/ 2>/dev/null || echo "⚠️ favicon.ico not found or already exists"
+          cp -v public/profile-photo.jpg dist/ 2>/dev/null || echo "⚠️ profile-photo.jpg not found or already exists"
+          cp -v public/head_image.png dist/ 2>/dev/null || echo "⚠️ head_image.png not found or already exists"
+          echo "Final dist contents:"
+          ls -la dist/ | grep -E "(index|manifest|favicon|head_image|404|sitemap|robots)" || echo "Some files may be in subdirectories"
 
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
