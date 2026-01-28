@@ -12,7 +12,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://jonatasdporto.github.io/jonatasporto/en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jonatasdporto.github.io/jonatasporto/" />
     <image:image>
-      <image:loc>https://jonatasdporto.github.io/jonatasporto/og-image.jpg</image:loc>
+      <image:loc>https://jonatasdporto.github.io/jonatasporto/head_image.png</image:loc>
       <image:title>Jônatas Dourado Porto - Desenvolvedor Mobile Full Stack</image:title>
       <image:caption>Portfólio de Jônatas Dourado Porto - Especialista em Flutter e Android</image:caption>
     </image:image>
@@ -28,7 +28,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://jonatasdporto.github.io/jonatasporto/en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jonatasdporto.github.io/jonatasporto/" />
     <image:image>
-      <image:loc>https://jonatasdporto.github.io/jonatasporto/og-image.jpg</image:loc>
+      <image:loc>https://jonatasdporto.github.io/jonatasporto/head_image.png</image:loc>
       <image:title>Jônatas Dourado Porto - Mobile Developer Full Stack</image:title>
       <image:caption>Portfolio of Jônatas Dourado Porto - Flutter and Android Expert</image:caption>
     </image:image>

@@ -58,8 +58,8 @@ jobs:
           if [ -f public/profile-photo.jpg ]; then
             cp public/profile-photo.jpg dist/profile-photo.jpg
           fi
-          if [ -f public/og-image.jpg ]; then
-            cp public/og-image.jpg dist/og-image.jpg
+          if [ -f public/head_image.png ]; then
+            cp public/head_image.png dist/head_image.png
           fi
 
       - name: Create .nojekyll file
