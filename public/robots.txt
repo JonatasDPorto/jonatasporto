@@ -1,14 +1,41 @@
+# robots.txt for jonatasdporto.github.io/jonatasporto
+# Last updated: 2025-01-27
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /profile-photo.jpg
+Allow: /favicon.ico
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
+
+# Disallow unnecessary paths (if any in future)
+# Disallow: /api/
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://jonatasdporto.github.io/jonatasporto/sitemap.xml
