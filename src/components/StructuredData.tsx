@@ -103,42 +103,67 @@ const StructuredData = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": `${baseUrl}#breadcrumb`,
     itemListElement: [
       {
         "@type": "ListItem",
         position: 1,
         name: isEnglish ? "Home" : "Início",
-        item: baseUrl,
+        item: {
+          "@type": "WebPage",
+          "@id": baseUrl,
+          name: isEnglish ? "Home" : "Início",
+        },
       },
       {
         "@type": "ListItem",
         position: 2,
         name: isEnglish ? "About" : "Sobre",
-        item: `${baseUrl}/#about`,
+        item: {
+          "@type": "WebPage",
+          "@id": `${baseUrl}/#about`,
+          name: isEnglish ? "About" : "Sobre",
+        },
       },
       {
         "@type": "ListItem",
         position: 3,
         name: isEnglish ? "Projects" : "Projetos",
-        item: `${baseUrl}/#projects`,
+        item: {
+          "@type": "WebPage",
+          "@id": `${baseUrl}/#projects`,
+          name: isEnglish ? "Projects" : "Projetos",
+        },
       },
       {
         "@type": "ListItem",
         position: 4,
         name: isEnglish ? "Flutter Packages" : "Packages Flutter",
-        item: `${baseUrl}/#flutter-packages`,
+        item: {
+          "@type": "WebPage",
+          "@id": `${baseUrl}/#flutter-packages`,
+          name: isEnglish ? "Flutter Packages" : "Packages Flutter",
+        },
       },
       {
         "@type": "ListItem",
         position: 5,
         name: isEnglish ? "Skills" : "Habilidades",
-        item: `${baseUrl}/#skills`,
+        item: {
+          "@type": "WebPage",
+          "@id": `${baseUrl}/#skills`,
+          name: isEnglish ? "Skills" : "Habilidades",
+        },
       },
       {
         "@type": "ListItem",
         position: 6,
         name: isEnglish ? "Contact" : "Contato",
-        item: `${baseUrl}/#contact`,
+        item: {
+          "@type": "WebPage",
+          "@id": `${baseUrl}/#contact`,
+          name: isEnglish ? "Contact" : "Contato",
+        },
       },
     ],
   };
