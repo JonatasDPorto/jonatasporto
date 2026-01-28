@@ -4,12 +4,28 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-      // Redirect to index.html with the current path as query parameter
+      // GitHub Pages 404.html - Redirect to index.html preserving the pathname
+      // This allows React Router to handle the routing
       var path = window.location.pathname;
       var search = window.location.search;
       var hash = window.location.hash;
-      var newPath = '/jonatasporto/index.html' + (path !== '/jonatasporto/' ? '?p=' + encodeURIComponent(path) : '') + search + hash;
-      window.location.replace(newPath);
+      
+      // Extract the path relative to /jonatasporto
+      var basePath = '/jonatasporto';
+      var relativePath = path.replace(basePath, '') || '/';
+      
+      // Remove trailing slash if present (except for root)
+      if (relativePath !== '/' && relativePath.endsWith('/')) {
+        relativePath = relativePath.slice(0, -1);
+      }
+      
+      // Store the path in sessionStorage so React Router can restore it
+      var fullPath = relativePath + search + hash;
+      sessionStorage.setItem('redirectPath', fullPath);
+      
+      // Redirect to index.html, then React Router will handle the routing
+      // We use replace to avoid adding to history
+      window.location.replace(basePath + '/index.html');
     </script>
   </head>
   <body>
