@@ -36,18 +36,21 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        continue-on-error: true
 
       - name: Copy public files to dist
         run: |
-          cp public/404.html dist/ 2>/dev/null || true
-          cp public/sitemap.xml dist/ 2>/dev/null || true
-          cp public/robots.txt dist/ 2>/dev/null || true
-          cp public/manifest.json dist/ 2>/dev/null || true
-          cp public/favicon.ico dist/ 2>/dev/null || true
-          cp public/profile-photo.jpg dist/ 2>/dev/null || true
-          cp public/head_image.jpg dist/ 2>/dev/null || true
-          cp public/google2af0666caf3ce96e.html dist/ 2>/dev/null || true
+          if [ -d public ]; then
+            cp public/404.html dist/ 2>/dev/null || echo "404.html not found, skipping"
+            cp public/sitemap.xml dist/ 2>/dev/null || echo "sitemap.xml not found, skipping"
+            cp public/robots.txt dist/ 2>/dev/null || echo "robots.txt not found, skipping"
+            cp public/manifest.json dist/ 2>/dev/null || echo "manifest.json not found, skipping"
+            cp public/favicon.ico dist/ 2>/dev/null || echo "favicon.ico not found, skipping"
+            cp public/profile-photo.jpg dist/ 2>/dev/null || echo "profile-photo.jpg not found, skipping"
+            cp public/head_image.jpg dist/ 2>/dev/null || echo "head_image.jpg not found, skipping"
+            cp public/google2af0666caf3ce96e.html dist/ 2>/dev/null || echo "google2af0666caf3ce96e.html not found, skipping"
+          else
+            echo "public directory not found"
+          fi
 
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
@@ -68,5 +71,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        continue-on-error: true
 
