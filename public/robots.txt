@@ -40,7 +40,4 @@ Allow: /
 # Disallow: /private/
 
 # Sitemap location
-# Primary sitemap (GitHub Pages)
 Sitemap: https://jonatasdporto.github.io/jonatasporto/sitemap.xml
-# Alternative sitemap (Raw GitHub - bypasses GitHub Pages caching)
-Sitemap: https://raw.githubusercontent.com/jonatasdporto/jonatasporto/main/public/sitemap.xml
