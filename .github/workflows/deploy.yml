@@ -67,6 +67,14 @@ jobs:
           cp -v public/profile-photo.jpg dist/ 2>/dev/null || echo "⚠️ profile-photo.jpg not found or already exists"
           cp -v public/head_image.jpg dist/ 2>/dev/null || echo "⚠️ head_image.jpg not found or already exists"
           cp -v public/google2af0666caf3ce96e.html dist/ 2>/dev/null || echo "⚠️ google2af0666caf3ce96e.html not found or already exists"
+          echo "Verifying sitemap.xml was copied..."
+          if [ -f dist/sitemap.xml ]; then
+            echo "✅ sitemap.xml exists in dist"
+            head -5 dist/sitemap.xml
+          else
+            echo "❌ ERROR: sitemap.xml NOT found in dist!"
+            exit 1
+          fi
           echo "Final dist contents:"
           ls -la dist/ | grep -E "(index|manifest|favicon|head_image|404|sitemap|robots|google)" || echo "Some files may be in subdirectories"
 
