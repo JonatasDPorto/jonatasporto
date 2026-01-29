@@ -9,8 +9,14 @@ interface PubDevPackageData {
   downloadData: Array<{
     date: string;
     downloads: number;
-    fullDate: Date;
+    fullDate: Date | string;
   }> | null;
+}
+
+interface StaticDataResponse {
+  lastUpdated: string;
+  packages: Record<string, PubDevPackageData & { lastUpdated?: string }>;
+  errors?: Record<string, string>;
 }
 
 interface PubDevApiResponse {
@@ -74,7 +80,42 @@ const fetchWithProxy = async (url: string): Promise<Response> => {
   throw new Error('Failed to fetch');
 };
 
-const fetchPackageData = async (packageName: string): Promise<PubDevPackageData> => {
+// Tenta buscar do JSON estático primeiro
+const fetchFromStaticData = async (packageName: string): Promise<PubDevPackageData | null> => {
+  try {
+    const base = import.meta.env.BASE_URL || '/jonatasporto/';
+    const response = await fetch(`${base}data/pubdev-packages.json`, {
+      cache: 'no-cache', // Sempre busca a versão mais recente do JSON
+    });
+    
+    if (!response.ok) {
+      return null;
+    }
+    
+    const staticData: StaticDataResponse = await response.json();
+    const packageData = staticData.packages[packageName];
+    
+    if (packageData) {
+      // Converte fullDate de string para Date se necessário
+      if (packageData.downloadData) {
+        packageData.downloadData = packageData.downloadData.map(item => ({
+          ...item,
+          fullDate: typeof item.fullDate === 'string' ? new Date(item.fullDate) : item.fullDate,
+        }));
+      }
+      
+      return packageData;
+    }
+    
+    return null;
+  } catch (error) {
+    console.warn('Failed to fetch from static data, falling back to API:', error);
+    return null;
+  }
+};
+
+// Fallback: busca da API do pub.dev
+const fetchPackageDataFromAPI = async (packageName: string): Promise<PubDevPackageData> => {
   const response = await fetchWithProxy(`https://pub.dev/api/packages/${packageName}`);
   
   if (!response.ok) {
@@ -168,12 +209,29 @@ const fetchPackageData = async (packageName: string): Promise<PubDevPackageData>
   };
 };
 
+// Função principal que tenta JSON estático primeiro, depois API
+const fetchPackageData = async (packageName: string): Promise<PubDevPackageData> => {
+  // Tenta buscar do JSON estático primeiro
+  const staticData = await fetchFromStaticData(packageName);
+  if (staticData) {
+    console.log(`Using static data for ${packageName}`);
+    return staticData;
+  }
+  
+  // Fallback para API se JSON estático não estiver disponível
+  console.log(`Falling back to API for ${packageName}`);
+  return fetchPackageDataFromAPI(packageName);
+};
+
 export const usePubDevPackage = (packageName: string) => {
   return useQuery({
     queryKey: ["pubDevPackage", packageName],
     queryFn: () => fetchPackageData(packageName),
-    staleTime: 1000 * 60 * 5,
+    staleTime: 24 * 60 * 60 * 1000, // 1 dia - dados do pub.dev não mudam frequentemente
+    gcTime: 7 * 24 * 60 * 60 * 1000, // Mantém no cache por 7 dias
     refetchOnWindowFocus: false,
+    refetchOnMount: false,
+    refetchOnReconnect: false,
   });
 };
 

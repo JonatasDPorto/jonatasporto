@@ -1,9 +1,10 @@
 // Service Worker para cache de longo prazo dos assets
-// Cache TTL: 1 ano para assets com hash, 1 dia para outros recursos
+// Cache TTL: 1 ano para assets com hash, 1 dia para outros recursos e APIs
 
 const CACHE_NAME = 'jonatasporto-v1';
 const STATIC_CACHE_TTL = 365 * 24 * 60 * 60 * 1000; // 1 ano em milissegundos
 const DYNAMIC_CACHE_TTL = 24 * 60 * 60 * 1000; // 1 dia em milissegundos
+const API_CACHE_TTL = 24 * 60 * 60 * 1000; // 1 dia para APIs (pub.dev)
 
 // Assets que devem ser cacheados permanentemente (têm hash no nome)
 const STATIC_ASSETS_PATTERNS = [
@@ -11,9 +12,20 @@ const STATIC_ASSETS_PATTERNS = [
   /\/assets\/.*\.(woff2|woff|ttf|eot)$/,
 ];
 
+// APIs que devem ser cacheadas por 1 dia (cache local por navegador)
+const API_PATTERNS = [
+  /pub\.dev\/api\//,
+  /api\.allorigins\.win\/raw\?url=.*pub\.dev/,
+];
+
 // Verifica se um recurso é um asset estático (com hash)
 function isStaticAsset(url) {
   return STATIC_ASSETS_PATTERNS.some(pattern => pattern.test(url));
+}
+
+// Verifica se é uma requisição de API do pub.dev
+function isApiRequest(url) {
+  return API_PATTERNS.some(pattern => pattern.test(url));
 }
 
 // Instalação do Service Worker
@@ -50,8 +62,11 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Ignora requisições de API externas
-  if (url.origin !== self.location.origin && !url.href.includes('api.allorigins.win')) {
+  // Intercepta requisições do pub.dev e allorigins.win para cache
+  const shouldCacheApi = isApiRequest(request.url);
+  
+  // Ignora outras requisições de API externas que não são do pub.dev
+  if (url.origin !== self.location.origin && !shouldCacheApi) {
     return;
   }
 
@@ -63,12 +78,22 @@ self.addEventListener('fetch', (event) => {
         const cacheDate = cachedResponse.headers.get('sw-cache-date');
         if (cacheDate) {
           const age = Date.now() - parseInt(cacheDate);
-          const ttl = isStaticAsset(request.url) ? STATIC_CACHE_TTL : DYNAMIC_CACHE_TTL;
+          let ttl;
+          
+          if (isStaticAsset(request.url)) {
+            ttl = STATIC_CACHE_TTL;
+          } else if (isApiRequest(request.url)) {
+            ttl = API_CACHE_TTL; // 1 dia para APIs do pub.dev
+          } else {
+            ttl = DYNAMIC_CACHE_TTL;
+          }
           
           if (age < ttl) {
+            console.log(`[SW] Serving from cache: ${request.url} (age: ${Math.round(age / 1000 / 60)}min)`);
             return cachedResponse;
           } else {
             // Cache expirado, remove e busca novamente
+            console.log(`[SW] Cache expired for: ${request.url}`);
             caches.delete(request);
           }
         } else {
@@ -97,9 +122,12 @@ self.addEventListener('fetch', (event) => {
             headers: headers,
           });
 
-          // Armazena no cache
+          // Armazena no cache (especialmente importante para APIs do pub.dev)
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(request, modifiedResponse);
+            if (isApiRequest(request.url)) {
+              console.log(`[SW] Cached API response: ${request.url} (TTL: 1 day)`);
+            }
           });
 
           return response;

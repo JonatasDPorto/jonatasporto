@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { copyFileSync, existsSync, readFileSync, writeFileSync, readdirSync } from "fs";
+import { copyFileSync, existsSync, readFileSync, writeFileSync, readdirSync, mkdirSync } from "fs";
 
 export default defineConfig(({ mode }) => {
   const base = '/jonatasporto/';
@@ -55,6 +55,21 @@ export default defineConfig(({ mode }) => {
           if (existsSync(publicHeaders)) {
             copyFileSync(publicHeaders, distHeaders);
             console.log('✓ Copied _headers to dist/');
+          }
+          
+          // Copy pubdev data JSON if it exists
+          const publicDataDir = path.resolve(__dirname, 'public/data');
+          const distDataDir = path.resolve(__dirname, 'dist/data');
+          if (existsSync(publicDataDir)) {
+            const pubdevJson = path.resolve(publicDataDir, 'pubdev-packages.json');
+            if (existsSync(pubdevJson)) {
+              if (!existsSync(distDataDir)) {
+                mkdirSync(distDataDir, { recursive: true });
+              }
+              const distJson = path.resolve(distDataDir, 'pubdev-packages.json');
+              copyFileSync(pubdevJson, distJson);
+              console.log('✓ Copied pubdev-packages.json to dist/data/');
+            }
           }
         },
       },

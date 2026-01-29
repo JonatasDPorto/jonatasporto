@@ -1,0 +1,51 @@
+name: Update Pub.dev Data
+
+on:
+  schedule:
+    # Roda diariamente às 00:00 UTC (21:00 BRT)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Permite execução manual
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write # Necessário para fazer commit
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Fetch pub.dev data
+        run: node scripts/fetch-pubdev-data.js
+      
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain public/data/pubdev-packages.json)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/data/pubdev-packages.json
+          git commit -m "chore: update pub.dev package data [skip ci]"
+          git push
+
