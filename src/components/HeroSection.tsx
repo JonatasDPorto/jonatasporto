@@ -108,6 +108,7 @@ const HeroSection = () => {
                   href="https://github.com/JonatasDPorto" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label={t("hero.githubAriaLabel") || "Visitar meu perfil no GitHub"}
                   className="p-2.5 sm:p-3 border border-border rounded-full hover:border-primary hover:text-primary transition-all duration-300"
                 >
                   <Github className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -116,12 +117,14 @@ const HeroSection = () => {
                   href="https://linkedin.com/in/jonatasporto" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label={t("hero.linkedinAriaLabel") || "Visitar meu perfil no LinkedIn"}
                   className="p-2.5 sm:p-3 border border-border rounded-full hover:border-primary hover:text-primary transition-all duration-300"
                 >
                   <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
                 <a 
                   href="mailto:jonatas.dourado@souunit.com.br"
+                  aria-label={t("hero.emailAriaLabel") || "Enviar email para Jônatas Dourado Porto"}
                   className="p-2.5 sm:p-3 border border-border rounded-full hover:border-primary hover:text-primary transition-all duration-300"
                 >
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5" />

@@ -110,6 +110,7 @@ const ProjectsSection = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`Visitar ${project.title} (abre em nova aba)`}
                       className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0"
                     >
                       <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />

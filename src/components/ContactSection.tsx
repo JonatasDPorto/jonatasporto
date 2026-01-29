@@ -82,6 +82,7 @@ const ContactSection = () => {
                 href={info.href}
                 target={info.href.startsWith("http") ? "_blank" : undefined}
                 rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                aria-label={`${info.label}: ${info.value}`}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}

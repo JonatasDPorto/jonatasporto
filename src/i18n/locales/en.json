@@ -15,7 +15,10 @@
     "name2": "Dourado",
     "name3": "Porto",
     "description": "With 6 years of experience in mobile development, specialized in Flutter and native Android development, creating innovative applications and exceptional experiences.",
-    "viewPortfolio": "View Portfolio"
+    "viewPortfolio": "View Portfolio",
+    "githubAriaLabel": "Visit my GitHub profile",
+    "linkedinAriaLabel": "Visit my LinkedIn profile",
+    "emailAriaLabel": "Send email to Jônatas Dourado Porto"
   },
   "about": {
     "title": "About Me",
