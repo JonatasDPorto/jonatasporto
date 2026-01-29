@@ -40,6 +40,22 @@ export default defineConfig(({ mode }) => {
             copyFileSync(publicSitemap, distSitemap);
             console.log('✓ Copied sitemap.xml to dist/');
           }
+          
+          // Copy service worker to dist root
+          const publicSw = path.resolve(__dirname, 'public/sw.js');
+          const distSw = path.resolve(__dirname, 'dist/sw.js');
+          if (existsSync(publicSw)) {
+            copyFileSync(publicSw, distSw);
+            console.log('✓ Copied service worker to dist/');
+          }
+          
+          // Copy _headers file for Netlify/Vercel (optional)
+          const publicHeaders = path.resolve(__dirname, 'public/_headers');
+          const distHeaders = path.resolve(__dirname, 'dist/_headers');
+          if (existsSync(publicHeaders)) {
+            copyFileSync(publicHeaders, distHeaders);
+            console.log('✓ Copied _headers to dist/');
+          }
         },
       },
       {
