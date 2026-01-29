@@ -4,9 +4,9 @@ import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { ExternalLink, Github } from "lucide-react";
 
-import projectBuzzlabs from "@/assets/agendamento.png";
+import projectBuzzlabs from "@/assets/agendamento.jpg";
 import projectDilemma from "@/assets/project-dilemma.png";
-import projectAutomation from "@/assets/automacao.webp";
+import projectAutomation from "@/assets/automacao.jpg";
 
 const ProjectsSection = () => {
   const { t } = useTranslation();
