@@ -49,10 +49,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://pub.dev" crossorigin />
+    
+    <!-- Preload LCP image will be injected by Vite plugin with correct hash -->
+    
+    <!-- Google Fonts - Loaded asynchronously to prevent render blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" /></noscript>
+    <script>
+      // Polyfill for async CSS loading
+      !function(e){"use strict";var t=function(t,n,o){var i,r=e.document,a=r.createElement("link");if(n)i=n;else{var l=(r.body||r.getElementsByTagName("head")[0]).childNodes;i=l[l.length-1]}var d=r.styleSheets;a.rel="stylesheet",a.href=t,a.media="only x",function e(t){if(r.body)return t();setTimeout(function(){e(t)})}(function(){i.parentNode.insertBefore(a,n?i:i.nextSibling)});var f=function(e){for(var t=a.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){f(e)})};return a.addEventListener&&a.addEventListener("load",function(){this.media=o||"all"}),a.onloadcssdefined=f,f(function(){a.media!==o&&(a.media=o||"all")}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);
+    </script>
+    
+    <!-- Critical CSS inline for above-the-fold content -->
+    <style>
+      /* Prevent FOUC with font fallbacks */
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      h1, h2, h3, h4, h5, h6 { font-family: Georgia, "Times New Roman", serif; }
+      
+      /* Critical styles for initial render */
+      #root { min-height: 100vh; }
+      html { scroll-behavior: smooth; }
+      
+      /* Prevent layout shift */
+      img { max-width: 100%; height: auto; }
+    </style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/jonatasporto/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/jonatasporto/profile-photo.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/jonatasporto/og-image.jpg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/jonatasporto/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/jonatasporto/favicon.ico" />
     <link rel="manifest" href="/jonatasporto/manifest.json" />

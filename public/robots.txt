@@ -11,7 +11,7 @@ Allow: /
 Crawl-delay: 0
 
 User-agent: Googlebot-Image
-Allow: /profile-photo.jpg
+Allow: /og-image.jpg
 Allow: /favicon.ico
 Allow: /head_image.jpg
 Allow: /sitemap.xml

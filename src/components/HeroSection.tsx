@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/og-image.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -33,9 +33,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
+            style={{ willChange: "transform, opacity" }}
           >
-            {/* Rotating border */}
-            <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-rotate-border hidden sm:block" style={{ width: "calc(100% + 40px)", height: "calc(100% + 40px)", top: "-20px", left: "-20px" }} />
+            {/* Rotating border - Using fixed positioning to avoid forced reflow */}
+            <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-rotate-border hidden sm:block" style={{ width: "calc(100% + 40px)", height: "calc(100% + 40px)", top: "-20px", left: "-20px", willChange: "transform" }} />
             
             {/* Gold accent circles */}
             <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full animate-float" />
@@ -47,6 +48,11 @@ const HeroSection = () => {
                 src={profilePhoto}
                 alt="Jônatas Dourado Porto"
                 className="w-full h-full object-cover object-center"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+                width="384"
+                height="384"
               />
             </div>
           </motion.div>
@@ -57,6 +63,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            style={{ willChange: "transform, opacity" }}
           >
             <motion.span 
               className="inline-block text-primary font-medium text-sm sm:text-base md:text-lg mb-3 sm:mb-4 tracking-wider"

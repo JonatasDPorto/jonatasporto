@@ -69,7 +69,7 @@ jobs:
           cp public/robots.txt dist/ 2>/dev/null || echo "robots.txt not found, skipping"
           cp public/manifest.json dist/ 2>/dev/null || echo "manifest.json not found, skipping"
           cp public/favicon.ico dist/ 2>/dev/null || echo "favicon.ico not found, skipping"
-          cp public/profile-photo.jpg dist/ 2>/dev/null || echo "profile-photo.jpg not found, skipping"
+          cp public/og-image.jpg dist/ 2>/dev/null || echo "og-image.jpg not found, skipping"
           cp public/head_image.jpg dist/ 2>/dev/null || echo "head_image.jpg not found, skipping"
           cp public/google2af0666caf3ce96e.html dist/ 2>/dev/null || echo "google2af0666caf3ce96e.html not found, skipping"
           echo ""
