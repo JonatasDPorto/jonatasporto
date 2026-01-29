@@ -56,7 +56,7 @@
         "description": "Aplicação de agendamento e reservas desenvolvida com Clojure, ClojureScript, shadow-cljs, re-frame e reagent. Arquitetura reativa com gerenciamento de estado avançado e componentes modulares."
       },
       "dilemma": {
-        "title": "Dilemma Insights",
+        "title": "Dilemma Insights (MIT)",
         "category": "Aplicativo Mobile",
         "description": "Plataforma de educação com simulações e analises para sala de aula para a Dilemma Insights. Interface moderna e intuitiva para visualização de dados e tomada de decisões estratégicas."
       },
