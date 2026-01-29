@@ -18,6 +18,8 @@ i18n
     },
     fallbackLng: 'pt',
     defaultNS: 'translation',
+    returnEmptyString: false,
+    returnNull: false,
     interpolation: {
       escapeValue: false,
     },
