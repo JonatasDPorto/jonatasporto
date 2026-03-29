@@ -46,6 +46,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add public/data/pubdev-packages.json
-          git commit -m "chore: update pub.dev package data [skip ci]"
+          git commit -m "chore: update pub.dev package data"
           git push
 

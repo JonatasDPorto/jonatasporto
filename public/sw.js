@@ -92,9 +92,9 @@ self.addEventListener('fetch', (event) => {
             console.log(`[SW] Serving from cache: ${request.url} (age: ${Math.round(age / 1000 / 60)}min)`);
             return cachedResponse;
           } else {
-            // Cache expirado, remove e busca novamente
+            // Cache expirado: remove a entrada (CacheStorage.delete() é por nome de cache, não por Request)
             console.log(`[SW] Cache expired for: ${request.url}`);
-            caches.delete(request);
+            caches.open(CACHE_NAME).then((cache) => cache.delete(request));
           }
         } else {
           return cachedResponse;
