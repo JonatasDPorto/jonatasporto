@@ -19,8 +19,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: t("contact.whatsapp"),
-      value: "+55 82 8178-8608",
-      href: "https://wa.me/5582981788608",
+      value: "+55 51 98194-4545",
+      href: "https://wa.me/5551981944545",
     },
     {
       icon: MapPin,
