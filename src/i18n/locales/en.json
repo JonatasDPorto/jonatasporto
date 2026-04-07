@@ -63,6 +63,11 @@
         "category": "Mobile App",
         "description": "Education platform with simulations and classroom analysis for Dilemma Insights. Modern and intuitive interface for data visualization and strategic decision making."
       },
+      "leadfilter": {
+        "title": "LeadFilter",
+        "category": "SaaS / Full-Stack",
+        "description": "AI lead qualification platform with WhatsApp and chatbot integration, on-page AI chat, automatic scoring, and real-time dashboards. Product built end-to-end by me."
+      },
       "bots": {
         "title": "Platform Bots",
         "category": "Automation",

@@ -6,6 +6,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 import projectBuzzlabs from "@/assets/agendamento.jpg";
 import projectDilemma from "@/assets/project-dilemma.png";
+import projectLeadFilter from "@/assets/leadfilter.jpeg";
 import projectAutomation from "@/assets/automacao.jpg";
 
 const ProjectsSection = () => {
@@ -28,6 +29,14 @@ const ProjectsSection = () => {
       description: t("projects.items.dilemma.description"),
       technologies: ["Flutter", "NodeJS", "Data Analytics", "Redis"],
       link: "https://www.dilemmainsights.com/",
+    },
+    {
+      title: t("projects.items.leadfilter.title"),
+      category: t("projects.items.leadfilter.category"),
+      image: projectLeadFilter,
+      description: t("projects.items.leadfilter.description"),
+      technologies: ["TypeScript", "React", "LLM", "WhatsApp API"],
+      link: "https://leadfilter.online/",
     },
     {
       title: t("projects.items.bots.title"),

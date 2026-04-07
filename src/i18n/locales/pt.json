@@ -63,6 +63,11 @@
         "category": "Aplicativo Mobile",
         "description": "Plataforma de educação com simulações e analises para sala de aula para a Dilemma Insights. Interface moderna e intuitiva para visualização de dados e tomada de decisões estratégicas."
       },
+      "leadfilter": {
+        "title": "LeadFilter",
+        "category": "SaaS / Full-Stack",
+        "description": "Plataforma de qualificação de leads com IA: integração com WhatsApp e chatbots, chat com IA na página, score automático e dashboard em tempo real. Produto desenvolvido por completo por mim."
+      },
       "bots": {
         "title": "Bots para Plataformas",
         "category": "Automação",
