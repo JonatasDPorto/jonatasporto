@@ -30,6 +30,11 @@
     "yearsExperience": "Years of Experience",
     "projectsDelivered": "Projects Delivered",
     "commitment": "Commitment",
+    "languages": {
+      "title": "Languages",
+      "portuguese": "Portuguese — native",
+      "english": "English — B2 in writing and speaking; C1 in listening and reading"
+    },
     "highlights": {
       "mobile": {
         "title": "Mobile Development",

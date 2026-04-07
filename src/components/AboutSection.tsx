@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Code2, Smartphone, Server, Sparkles } from "lucide-react";
+import { Code2, Smartphone, Server, Sparkles, Languages } from "lucide-react";
 
 const AboutSection = () => {
   const { t, i18n } = useTranslation();
@@ -86,6 +86,22 @@ const AboutSection = () => {
                 <p className="text-muted-foreground text-xs sm:text-sm mt-1">{t("about.commitment")}</p>
               </div>
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.32 }}
+              className="mt-8 sm:mt-10 p-4 sm:p-5 rounded-xl border border-border bg-secondary/50"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <Languages className="w-5 h-5 text-primary shrink-0" aria-hidden />
+                <h3 className="font-display font-semibold text-sm sm:text-base">{t("about.languages.title")}</h3>
+              </div>
+              <ul className="space-y-2 text-muted-foreground text-xs sm:text-sm leading-relaxed">
+                <li>{t("about.languages.portuguese")}</li>
+                <li>{t("about.languages.english")}</li>
+              </ul>
+            </motion.div>
           </motion.div>
 
           {/* Highlights grid */}
