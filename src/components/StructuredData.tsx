@@ -19,8 +19,8 @@ const StructuredData = () => {
     familyName: "Dourado Porto",
     jobTitle: isEnglish ? "Mobile Developer Full Stack" : "Desenvolvedor Mobile Full Stack",
     description: isEnglish
-      ? "Mobile Developer Full Stack with 8+ years of experience in Flutter, Native Android, Node.js and React. Transforming ideas into exceptional digital solutions."
-      : "Desenvolvedor Mobile Full Stack com 8+ anos de experiência em Flutter, Android Nativo, Node.js e React. Transformando ideias em soluções digitais excepcionais.",
+      ? "Mobile Developer Full Stack with 6 years of experience in Flutter, Native Android, Node.js and React. Transforming ideas into exceptional digital solutions."
+      : "Desenvolvedor Mobile Full Stack com 6+ anos de experiência em Flutter, Android Nativo, Node.js e React. Transformando ideias em soluções digitais excepcionais.",
     url: baseUrl,
     image: {
       "@type": "ImageObject",
