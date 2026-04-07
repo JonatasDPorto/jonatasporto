@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import FlutterPackagesSection from "@/components/FlutterPackagesSection";
 import SkillsSection from "@/components/SkillsSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ const Index = () => {
         <ProjectsSection />
         <FlutterPackagesSection />
         <SkillsSection />
+        <ExperienceSection />
         <EducationSection />
         <ContactSection />
       </main>

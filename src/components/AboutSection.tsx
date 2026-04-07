@@ -74,7 +74,7 @@ const AboutSection = () => {
 
             <div className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
               <div className="bg-secondary px-4 sm:px-6 py-3 sm:py-4 rounded-lg border border-border flex-1 sm:flex-none min-w-[120px] sm:min-w-0">
-                <span className="text-2xl sm:text-3xl font-display font-bold text-primary block">6+</span>
+                <span className="text-2xl sm:text-3xl font-display font-bold text-primary block">8+</span>
                 <p className="text-muted-foreground text-xs sm:text-sm mt-1">{t("about.yearsExperience")}</p>
               </div>
               <div className="bg-secondary px-4 sm:px-6 py-3 sm:py-4 rounded-lg border border-border flex-1 sm:flex-none min-w-[120px] sm:min-w-0">

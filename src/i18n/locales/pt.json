@@ -5,6 +5,7 @@
     "projects": "Projetos",
     "flutterPackages": "Packages",
     "skills": "Skills",
+    "experience": "Experiência",
     "education": "Educação",
     "contact": "Contato",
     "talkToMe": "Fale Comigo"
@@ -119,6 +120,51 @@
         }
       }
     }
+  },
+  "experience": {
+    "title": "Carreira",
+    "heading": "Experiência Profissional",
+    "description": "Trajetória alinhada ao meu perfil no LinkedIn, da experiência mais recente à mais antiga.",
+    "linkedinCta": "Ver perfil completo no LinkedIn",
+    "items": [
+      {
+        "role": "Desenvolvedor de software",
+        "company": "99Freelas",
+        "companyUrl": "https://www.linkedin.com/company/99freelas",
+        "period": "fev de 2017 – atual",
+        "badge": "Atual",
+        "highlights": [
+          "Aplicativos completos sob demanda, com front-end e back-end para diversas necessidades.",
+          "Período como engenheiro mobile full stack (2023–2025) com Flutter e Node.js.",
+          "Automações em Python.",
+          "Bots para Telegram, Discord, Slack e Twitch.",
+          "Geração de imagens com Midjourney e Leonardo.ai."
+        ]
+      },
+      {
+        "role": "Desenvolvedor de software (Clojure)",
+        "company": "Buzzlabs",
+        "companyUrl": "https://www.linkedin.com/company/buzzlabs-software",
+        "period": "out de 2024 – fev de 2025",
+        "highlights": [
+          "Desenvolvimento em Clojure e ClojureScript em produto de agendamento e reservas."
+        ]
+      },
+      {
+        "role": "Engenheiro mobile full stack",
+        "company": "Dilemma",
+        "companyUrl": "https://www.linkedin.com/company/dilemma-inc",
+        "period": "dez de 2020 – fev de 2024",
+        "location": "Boston, MA, EUA · remoto",
+        "highlights": [
+          "Aplicação educacional usada por MIT, Google e Georgetown em MBAs, com simulações e jogos em tempo real.",
+          "Flutter: Inherited Widgets e Provider, FL Chart, animações (Flare, CustomPainter, FragmentShader) e testes.",
+          "Fluxos como login, cadastro, home, leaderboard e cursos; 12 minigames; UI alinhada ao Figma.",
+          "Back-end em Node.js com Redis e WebSocket para a lógica dos minigames.",
+          "Bots para minigames e modelos de machine learning com PyTorch."
+        ]
+      }
+    ]
   },
   "education": {
     "title": "Educação",
