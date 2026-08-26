@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T00:31:46.190Z",
+  "lastUpdated": "2026-08-26T00:32:52.604Z",
   "packages": {
     "flux_borders": {
       "name": "flux_borders",
@@ -269,7 +269,7 @@
           "fullDate": "2026-08-23T00:00:00.000Z"
         }
       ],
-      "lastUpdated": "2026-08-25T00:31:42.925Z"
+      "lastUpdated": "2026-08-26T00:32:49.323Z"
     },
     "clean_dart_generate": {
       "name": "clean_dart_generate",
@@ -539,7 +539,7 @@
           "fullDate": "2026-08-23T00:00:00.000Z"
         }
       ],
-      "lastUpdated": "2026-08-25T00:31:44.050Z"
+      "lastUpdated": "2026-08-26T00:32:50.463Z"
     },
     "image_slider_button": {
       "name": "image_slider_button",
@@ -809,7 +809,7 @@
           "fullDate": "2026-08-23T00:00:00.000Z"
         }
       ],
-      "lastUpdated": "2026-08-25T00:31:45.189Z"
+      "lastUpdated": "2026-08-26T00:32:51.603Z"
     }
   }
 }
