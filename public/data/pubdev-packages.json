@@ -1,815 +1,815 @@
 {
-  "lastUpdated": "2026-09-11T01:44:20.025Z",
+  "lastUpdated": "2026-09-12T01:50:20.112Z",
   "packages": {
     "flux_borders": {
       "name": "flux_borders",
       "version": "0.0.2",
       "points": 150,
       "likes": 2,
-      "totalDownloads": 343,
+      "totalDownloads": 349,
       "downloadData": [
         {
-          "date": "Sep 16",
+          "date": "Sep 18",
           "downloads": 0,
-          "fullDate": "2025-09-16T00:00:00.000Z"
+          "fullDate": "2025-09-18T00:00:00.000Z"
         },
         {
-          "date": "Sep 23",
+          "date": "Sep 25",
           "downloads": 0,
-          "fullDate": "2025-09-23T00:00:00.000Z"
+          "fullDate": "2025-09-25T00:00:00.000Z"
         },
         {
-          "date": "Sep 30",
+          "date": "Oct 2",
           "downloads": 0,
-          "fullDate": "2025-09-30T00:00:00.000Z"
+          "fullDate": "2025-10-02T00:00:00.000Z"
         },
         {
-          "date": "Oct 7",
+          "date": "Oct 9",
           "downloads": 0,
-          "fullDate": "2025-10-07T00:00:00.000Z"
+          "fullDate": "2025-10-09T00:00:00.000Z"
         },
         {
-          "date": "Oct 14",
+          "date": "Oct 16",
           "downloads": 0,
-          "fullDate": "2025-10-14T00:00:00.000Z"
+          "fullDate": "2025-10-16T00:00:00.000Z"
         },
         {
-          "date": "Oct 21",
+          "date": "Oct 23",
           "downloads": 0,
-          "fullDate": "2025-10-21T00:00:00.000Z"
+          "fullDate": "2025-10-23T00:00:00.000Z"
         },
         {
-          "date": "Oct 28",
+          "date": "Oct 30",
           "downloads": 0,
-          "fullDate": "2025-10-28T00:00:00.000Z"
+          "fullDate": "2025-10-30T00:00:00.000Z"
         },
         {
-          "date": "Nov 4",
+          "date": "Nov 6",
           "downloads": 0,
-          "fullDate": "2025-11-04T00:00:00.000Z"
+          "fullDate": "2025-11-06T00:00:00.000Z"
         },
         {
-          "date": "Nov 11",
+          "date": "Nov 13",
           "downloads": 0,
-          "fullDate": "2025-11-11T00:00:00.000Z"
+          "fullDate": "2025-11-13T00:00:00.000Z"
         },
         {
-          "date": "Nov 18",
+          "date": "Nov 20",
           "downloads": 0,
-          "fullDate": "2025-11-18T00:00:00.000Z"
+          "fullDate": "2025-11-20T00:00:00.000Z"
         },
         {
-          "date": "Nov 25",
+          "date": "Nov 27",
           "downloads": 0,
-          "fullDate": "2025-11-25T00:00:00.000Z"
+          "fullDate": "2025-11-27T00:00:00.000Z"
         },
         {
-          "date": "Dec 2",
+          "date": "Dec 4",
           "downloads": 0,
-          "fullDate": "2025-12-02T00:00:00.000Z"
+          "fullDate": "2025-12-04T00:00:00.000Z"
         },
         {
-          "date": "Dec 9",
+          "date": "Dec 11",
           "downloads": 0,
-          "fullDate": "2025-12-09T00:00:00.000Z"
+          "fullDate": "2025-12-11T00:00:00.000Z"
         },
         {
-          "date": "Dec 16",
-          "downloads": 56,
-          "fullDate": "2025-12-16T00:00:00.000Z"
+          "date": "Dec 18",
+          "downloads": 103,
+          "fullDate": "2025-12-18T00:00:00.000Z"
         },
         {
-          "date": "Dec 23",
-          "downloads": 52,
-          "fullDate": "2025-12-23T00:00:00.000Z"
-        },
-        {
-          "date": "Dec 30",
-          "downloads": 4,
-          "fullDate": "2025-12-30T00:00:00.000Z"
-        },
-        {
-          "date": "Jan 6",
-          "downloads": 4,
-          "fullDate": "2026-01-06T00:00:00.000Z"
-        },
-        {
-          "date": "Jan 13",
+          "date": "Dec 25",
           "downloads": 5,
-          "fullDate": "2026-01-13T00:00:00.000Z"
+          "fullDate": "2025-12-25T00:00:00.000Z"
         },
         {
-          "date": "Jan 20",
-          "downloads": 8,
-          "fullDate": "2026-01-20T00:00:00.000Z"
+          "date": "Jan 1",
+          "downloads": 5,
+          "fullDate": "2026-01-01T00:00:00.000Z"
         },
         {
-          "date": "Jan 27",
-          "downloads": 4,
-          "fullDate": "2026-01-27T00:00:00.000Z"
+          "date": "Jan 8",
+          "downloads": 5,
+          "fullDate": "2026-01-08T00:00:00.000Z"
         },
         {
-          "date": "Feb 3",
+          "date": "Jan 15",
           "downloads": 3,
-          "fullDate": "2026-02-03T00:00:00.000Z"
+          "fullDate": "2026-01-15T00:00:00.000Z"
         },
         {
-          "date": "Feb 10",
+          "date": "Jan 22",
+          "downloads": 8,
+          "fullDate": "2026-01-22T00:00:00.000Z"
+        },
+        {
+          "date": "Jan 29",
           "downloads": 4,
-          "fullDate": "2026-02-10T00:00:00.000Z"
+          "fullDate": "2026-01-29T00:00:00.000Z"
         },
         {
-          "date": "Feb 17",
-          "downloads": 7,
-          "fullDate": "2026-02-17T00:00:00.000Z"
+          "date": "Feb 5",
+          "downloads": 3,
+          "fullDate": "2026-02-05T00:00:00.000Z"
         },
         {
-          "date": "Feb 24",
+          "date": "Feb 12",
+          "downloads": 6,
+          "fullDate": "2026-02-12T00:00:00.000Z"
+        },
+        {
+          "date": "Feb 19",
+          "downloads": 8,
+          "fullDate": "2026-02-19T00:00:00.000Z"
+        },
+        {
+          "date": "Feb 26",
+          "downloads": 8,
+          "fullDate": "2026-02-26T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 5",
+          "downloads": 4,
+          "fullDate": "2026-03-05T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 12",
+          "downloads": 9,
+          "fullDate": "2026-03-12T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 19",
+          "downloads": 3,
+          "fullDate": "2026-03-19T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 26",
+          "downloads": 8,
+          "fullDate": "2026-03-26T00:00:00.000Z"
+        },
+        {
+          "date": "Apr 2",
           "downloads": 11,
-          "fullDate": "2026-02-24T00:00:00.000Z"
+          "fullDate": "2026-04-02T00:00:00.000Z"
         },
         {
-          "date": "Mar 3",
-          "downloads": 4,
-          "fullDate": "2026-03-03T00:00:00.000Z"
+          "date": "Apr 9",
+          "downloads": 5,
+          "fullDate": "2026-04-09T00:00:00.000Z"
         },
         {
-          "date": "Mar 10",
-          "downloads": 9,
-          "fullDate": "2026-03-10T00:00:00.000Z"
-        },
-        {
-          "date": "Mar 17",
+          "date": "Apr 16",
           "downloads": 2,
-          "fullDate": "2026-03-17T00:00:00.000Z"
+          "fullDate": "2026-04-16T00:00:00.000Z"
         },
         {
-          "date": "Mar 24",
+          "date": "Apr 23",
+          "downloads": 6,
+          "fullDate": "2026-04-23T00:00:00.000Z"
+        },
+        {
+          "date": "Apr 30",
           "downloads": 7,
-          "fullDate": "2026-03-24T00:00:00.000Z"
+          "fullDate": "2026-04-30T00:00:00.000Z"
         },
         {
-          "date": "Mar 31",
-          "downloads": 9,
-          "fullDate": "2026-03-31T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 7",
-          "downloads": 8,
-          "fullDate": "2026-04-07T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 14",
+          "date": "May 7",
           "downloads": 3,
-          "fullDate": "2026-04-14T00:00:00.000Z"
+          "fullDate": "2026-05-07T00:00:00.000Z"
         },
         {
-          "date": "Apr 21",
+          "date": "May 14",
           "downloads": 4,
-          "fullDate": "2026-04-21T00:00:00.000Z"
+          "fullDate": "2026-05-14T00:00:00.000Z"
         },
         {
-          "date": "Apr 28",
-          "downloads": 6,
-          "fullDate": "2026-04-28T00:00:00.000Z"
-        },
-        {
-          "date": "May 5",
-          "downloads": 6,
-          "fullDate": "2026-05-05T00:00:00.000Z"
-        },
-        {
-          "date": "May 12",
-          "downloads": 4,
-          "fullDate": "2026-05-12T00:00:00.000Z"
-        },
-        {
-          "date": "May 19",
+          "date": "May 21",
           "downloads": 13,
-          "fullDate": "2026-05-19T00:00:00.000Z"
+          "fullDate": "2026-05-21T00:00:00.000Z"
         },
         {
-          "date": "May 26",
+          "date": "May 28",
           "downloads": 4,
-          "fullDate": "2026-05-26T00:00:00.000Z"
+          "fullDate": "2026-05-28T00:00:00.000Z"
         },
         {
-          "date": "Jun 2",
-          "downloads": 3,
-          "fullDate": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 9",
-          "downloads": 3,
-          "fullDate": "2026-06-09T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 16",
+          "date": "Jun 4",
           "downloads": 4,
-          "fullDate": "2026-06-16T00:00:00.000Z"
+          "fullDate": "2026-06-04T00:00:00.000Z"
         },
         {
-          "date": "Jun 23",
-          "downloads": 12,
-          "fullDate": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 30",
-          "downloads": 8,
-          "fullDate": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "Jul 7",
-          "downloads": 6,
-          "fullDate": "2026-07-07T00:00:00.000Z"
-        },
-        {
-          "date": "Jul 14",
-          "downloads": 7,
-          "fullDate": "2026-07-14T00:00:00.000Z"
-        },
-        {
-          "date": "Jul 21",
-          "downloads": 7,
-          "fullDate": "2026-07-21T00:00:00.000Z"
-        },
-        {
-          "date": "Jul 28",
-          "downloads": 7,
-          "fullDate": "2026-07-28T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 4",
-          "downloads": 18,
-          "fullDate": "2026-08-04T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 11",
-          "downloads": 11,
-          "fullDate": "2026-08-11T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 18",
-          "downloads": 3,
-          "fullDate": "2026-08-18T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 25",
-          "downloads": 8,
-          "fullDate": "2026-08-25T00:00:00.000Z"
-        },
-        {
-          "date": "Sep 1",
-          "downloads": 7,
-          "fullDate": "2026-09-01T00:00:00.000Z"
-        },
-        {
-          "date": "Sep 8",
+          "date": "Jun 11",
           "downloads": 2,
-          "fullDate": "2026-09-08T00:00:00.000Z"
+          "fullDate": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 18",
+          "downloads": 10,
+          "fullDate": "2026-06-18T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 25",
+          "downloads": 8,
+          "fullDate": "2026-06-25T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 2",
+          "downloads": 8,
+          "fullDate": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 9",
+          "downloads": 4,
+          "fullDate": "2026-07-09T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 16",
+          "downloads": 8,
+          "fullDate": "2026-07-16T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 23",
+          "downloads": 10,
+          "fullDate": "2026-07-23T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 30",
+          "downloads": 6,
+          "fullDate": "2026-07-30T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 6",
+          "downloads": 20,
+          "fullDate": "2026-08-06T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 13",
+          "downloads": 6,
+          "fullDate": "2026-08-13T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 20",
+          "downloads": 5,
+          "fullDate": "2026-08-20T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 27",
+          "downloads": 6,
+          "fullDate": "2026-08-27T00:00:00.000Z"
+        },
+        {
+          "date": "Sep 3",
+          "downloads": 8,
+          "fullDate": "2026-09-03T00:00:00.000Z"
+        },
+        {
+          "date": "Sep 10",
+          "downloads": 7,
+          "fullDate": "2026-09-10T00:00:00.000Z"
         }
       ],
-      "lastUpdated": "2026-09-11T01:44:16.659Z"
+      "lastUpdated": "2026-09-12T01:50:16.754Z"
     },
     "clean_dart_generate": {
       "name": "clean_dart_generate",
       "version": "1.0.13",
       "points": 150,
       "likes": 0,
-      "totalDownloads": 831,
+      "totalDownloads": 836,
       "downloadData": [
         {
-          "date": "Sep 16",
-          "downloads": 5,
-          "fullDate": "2025-09-16T00:00:00.000Z"
+          "date": "Sep 18",
+          "downloads": 19,
+          "fullDate": "2025-09-18T00:00:00.000Z"
         },
         {
-          "date": "Sep 23",
-          "downloads": 20,
-          "fullDate": "2025-09-23T00:00:00.000Z"
-        },
-        {
-          "date": "Sep 30",
-          "downloads": 5,
-          "fullDate": "2025-09-30T00:00:00.000Z"
-        },
-        {
-          "date": "Oct 7",
-          "downloads": 7,
-          "fullDate": "2025-10-07T00:00:00.000Z"
-        },
-        {
-          "date": "Oct 14",
-          "downloads": 2,
-          "fullDate": "2025-10-14T00:00:00.000Z"
-        },
-        {
-          "date": "Oct 21",
-          "downloads": 9,
-          "fullDate": "2025-10-21T00:00:00.000Z"
-        },
-        {
-          "date": "Oct 28",
-          "downloads": 9,
-          "fullDate": "2025-10-28T00:00:00.000Z"
-        },
-        {
-          "date": "Nov 4",
+          "date": "Sep 25",
           "downloads": 4,
-          "fullDate": "2025-11-04T00:00:00.000Z"
+          "fullDate": "2025-09-25T00:00:00.000Z"
         },
         {
-          "date": "Nov 11",
-          "downloads": 10,
-          "fullDate": "2025-11-11T00:00:00.000Z"
-        },
-        {
-          "date": "Nov 18",
-          "downloads": 18,
-          "fullDate": "2025-11-18T00:00:00.000Z"
-        },
-        {
-          "date": "Nov 25",
+          "date": "Oct 2",
           "downloads": 9,
-          "fullDate": "2025-11-25T00:00:00.000Z"
+          "fullDate": "2025-10-02T00:00:00.000Z"
         },
         {
-          "date": "Dec 2",
-          "downloads": 7,
-          "fullDate": "2025-12-02T00:00:00.000Z"
-        },
-        {
-          "date": "Dec 9",
+          "date": "Oct 9",
           "downloads": 3,
-          "fullDate": "2025-12-09T00:00:00.000Z"
+          "fullDate": "2025-10-09T00:00:00.000Z"
         },
         {
-          "date": "Dec 16",
-          "downloads": 3,
-          "fullDate": "2025-12-16T00:00:00.000Z"
+          "date": "Oct 16",
+          "downloads": 5,
+          "fullDate": "2025-10-16T00:00:00.000Z"
         },
         {
-          "date": "Dec 23",
-          "downloads": 3,
-          "fullDate": "2025-12-23T00:00:00.000Z"
+          "date": "Oct 23",
+          "downloads": 9,
+          "fullDate": "2025-10-23T00:00:00.000Z"
         },
         {
-          "date": "Dec 30",
+          "date": "Oct 30",
           "downloads": 6,
-          "fullDate": "2025-12-30T00:00:00.000Z"
+          "fullDate": "2025-10-30T00:00:00.000Z"
         },
         {
-          "date": "Jan 6",
-          "downloads": 4,
-          "fullDate": "2026-01-06T00:00:00.000Z"
+          "date": "Nov 6",
+          "downloads": 6,
+          "fullDate": "2025-11-06T00:00:00.000Z"
         },
         {
-          "date": "Jan 13",
-          "downloads": 4,
-          "fullDate": "2026-01-13T00:00:00.000Z"
-        },
-        {
-          "date": "Jan 20",
-          "downloads": 2,
-          "fullDate": "2026-01-20T00:00:00.000Z"
-        },
-        {
-          "date": "Jan 27",
-          "downloads": 58,
-          "fullDate": "2026-01-27T00:00:00.000Z"
-        },
-        {
-          "date": "Feb 3",
-          "downloads": 72,
-          "fullDate": "2026-02-03T00:00:00.000Z"
-        },
-        {
-          "date": "Feb 10",
-          "downloads": 20,
-          "fullDate": "2026-02-10T00:00:00.000Z"
-        },
-        {
-          "date": "Feb 17",
-          "downloads": 45,
-          "fullDate": "2026-02-17T00:00:00.000Z"
-        },
-        {
-          "date": "Feb 24",
-          "downloads": 54,
-          "fullDate": "2026-02-24T00:00:00.000Z"
-        },
-        {
-          "date": "Mar 3",
-          "downloads": 16,
-          "fullDate": "2026-03-03T00:00:00.000Z"
-        },
-        {
-          "date": "Mar 10",
+          "date": "Nov 13",
           "downloads": 23,
-          "fullDate": "2026-03-10T00:00:00.000Z"
+          "fullDate": "2025-11-13T00:00:00.000Z"
         },
         {
-          "date": "Mar 17",
-          "downloads": 9,
-          "fullDate": "2026-03-17T00:00:00.000Z"
-        },
-        {
-          "date": "Mar 24",
-          "downloads": 31,
-          "fullDate": "2026-03-24T00:00:00.000Z"
-        },
-        {
-          "date": "Mar 31",
+          "date": "Nov 20",
           "downloads": 5,
-          "fullDate": "2026-03-31T00:00:00.000Z"
+          "fullDate": "2025-11-20T00:00:00.000Z"
         },
         {
-          "date": "Apr 7",
-          "downloads": 7,
-          "fullDate": "2026-04-07T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 14",
-          "downloads": 25,
-          "fullDate": "2026-04-14T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 21",
-          "downloads": 20,
-          "fullDate": "2026-04-21T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 28",
-          "downloads": 19,
-          "fullDate": "2026-04-28T00:00:00.000Z"
-        },
-        {
-          "date": "May 5",
-          "downloads": 5,
-          "fullDate": "2026-05-05T00:00:00.000Z"
-        },
-        {
-          "date": "May 12",
-          "downloads": 32,
-          "fullDate": "2026-05-12T00:00:00.000Z"
-        },
-        {
-          "date": "May 19",
-          "downloads": 25,
-          "fullDate": "2026-05-19T00:00:00.000Z"
-        },
-        {
-          "date": "May 26",
-          "downloads": 16,
-          "fullDate": "2026-05-26T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 2",
-          "downloads": 16,
-          "fullDate": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 9",
-          "downloads": 4,
-          "fullDate": "2026-06-09T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 16",
-          "downloads": 7,
-          "fullDate": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 23",
-          "downloads": 27,
-          "fullDate": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 30",
+          "date": "Nov 27",
           "downloads": 9,
-          "fullDate": "2026-06-30T00:00:00.000Z"
+          "fullDate": "2025-11-27T00:00:00.000Z"
         },
         {
-          "date": "Jul 7",
-          "downloads": 7,
-          "fullDate": "2026-07-07T00:00:00.000Z"
+          "date": "Dec 4",
+          "downloads": 5,
+          "fullDate": "2025-12-04T00:00:00.000Z"
         },
         {
-          "date": "Jul 14",
-          "downloads": 28,
-          "fullDate": "2026-07-14T00:00:00.000Z"
+          "date": "Dec 11",
+          "downloads": 3,
+          "fullDate": "2025-12-11T00:00:00.000Z"
         },
         {
-          "date": "Jul 21",
-          "downloads": 19,
-          "fullDate": "2026-07-21T00:00:00.000Z"
+          "date": "Dec 18",
+          "downloads": 3,
+          "fullDate": "2025-12-18T00:00:00.000Z"
         },
         {
-          "date": "Jul 28",
-          "downloads": 18,
-          "fullDate": "2026-07-28T00:00:00.000Z"
+          "date": "Dec 25",
+          "downloads": 3,
+          "fullDate": "2025-12-25T00:00:00.000Z"
         },
         {
-          "date": "Aug 4",
-          "downloads": 42,
-          "fullDate": "2026-08-04T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 11",
+          "date": "Jan 1",
           "downloads": 8,
-          "fullDate": "2026-08-11T00:00:00.000Z"
+          "fullDate": "2026-01-01T00:00:00.000Z"
         },
         {
-          "date": "Aug 18",
+          "date": "Jan 8",
+          "downloads": 2,
+          "fullDate": "2026-01-08T00:00:00.000Z"
+        },
+        {
+          "date": "Jan 15",
           "downloads": 4,
-          "fullDate": "2026-08-18T00:00:00.000Z"
+          "fullDate": "2026-01-15T00:00:00.000Z"
         },
         {
-          "date": "Aug 25",
+          "date": "Jan 22",
+          "downloads": 3,
+          "fullDate": "2026-01-22T00:00:00.000Z"
+        },
+        {
+          "date": "Jan 29",
+          "downloads": 121,
+          "fullDate": "2026-01-29T00:00:00.000Z"
+        },
+        {
+          "date": "Feb 5",
+          "downloads": 23,
+          "fullDate": "2026-02-05T00:00:00.000Z"
+        },
+        {
+          "date": "Feb 12",
           "downloads": 19,
-          "fullDate": "2026-08-25T00:00:00.000Z"
+          "fullDate": "2026-02-12T00:00:00.000Z"
         },
         {
-          "date": "Sep 1",
-          "downloads": 7,
-          "fullDate": "2026-09-01T00:00:00.000Z"
+          "date": "Feb 19",
+          "downloads": 46,
+          "fullDate": "2026-02-19T00:00:00.000Z"
         },
         {
-          "date": "Sep 8",
+          "date": "Feb 26",
+          "downloads": 53,
+          "fullDate": "2026-02-26T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 5",
+          "downloads": 12,
+          "fullDate": "2026-03-05T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 12",
+          "downloads": 17,
+          "fullDate": "2026-03-12T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 19",
+          "downloads": 6,
+          "fullDate": "2026-03-19T00:00:00.000Z"
+        },
+        {
+          "date": "Mar 26",
+          "downloads": 32,
+          "fullDate": "2026-03-26T00:00:00.000Z"
+        },
+        {
+          "date": "Apr 2",
+          "downloads": 6,
+          "fullDate": "2026-04-02T00:00:00.000Z"
+        },
+        {
+          "date": "Apr 9",
+          "downloads": 19,
+          "fullDate": "2026-04-09T00:00:00.000Z"
+        },
+        {
+          "date": "Apr 16",
+          "downloads": 26,
+          "fullDate": "2026-04-16T00:00:00.000Z"
+        },
+        {
+          "date": "Apr 23",
+          "downloads": 19,
+          "fullDate": "2026-04-23T00:00:00.000Z"
+        },
+        {
+          "date": "Apr 30",
+          "downloads": 5,
+          "fullDate": "2026-04-30T00:00:00.000Z"
+        },
+        {
+          "date": "May 7",
           "downloads": 4,
-          "fullDate": "2026-09-08T00:00:00.000Z"
+          "fullDate": "2026-05-07T00:00:00.000Z"
+        },
+        {
+          "date": "May 14",
+          "downloads": 32,
+          "fullDate": "2026-05-14T00:00:00.000Z"
+        },
+        {
+          "date": "May 21",
+          "downloads": 25,
+          "fullDate": "2026-05-21T00:00:00.000Z"
+        },
+        {
+          "date": "May 28",
+          "downloads": 16,
+          "fullDate": "2026-05-28T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 4",
+          "downloads": 16,
+          "fullDate": "2026-06-04T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 11",
+          "downloads": 4,
+          "fullDate": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 18",
+          "downloads": 15,
+          "fullDate": "2026-06-18T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 25",
+          "downloads": 20,
+          "fullDate": "2026-06-25T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 2",
+          "downloads": 11,
+          "fullDate": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 9",
+          "downloads": 4,
+          "fullDate": "2026-07-09T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 16",
+          "downloads": 41,
+          "fullDate": "2026-07-16T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 23",
+          "downloads": 20,
+          "fullDate": "2026-07-23T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 30",
+          "downloads": 33,
+          "fullDate": "2026-07-30T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 6",
+          "downloads": 17,
+          "fullDate": "2026-08-06T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 13",
+          "downloads": 4,
+          "fullDate": "2026-08-13T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 20",
+          "downloads": 5,
+          "fullDate": "2026-08-20T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 27",
+          "downloads": 18,
+          "fullDate": "2026-08-27T00:00:00.000Z"
+        },
+        {
+          "date": "Sep 3",
+          "downloads": 8,
+          "fullDate": "2026-09-03T00:00:00.000Z"
+        },
+        {
+          "date": "Sep 10",
+          "downloads": 10,
+          "fullDate": "2026-09-10T00:00:00.000Z"
         }
       ],
-      "lastUpdated": "2026-09-11T01:44:17.847Z"
+      "lastUpdated": "2026-09-12T01:50:17.953Z"
     },
     "image_slider_button": {
       "name": "image_slider_button",
       "version": "3.1.1",
       "points": 150,
       "likes": 5,
-      "totalDownloads": 591,
+      "totalDownloads": 583,
       "downloadData": [
         {
-          "date": "Sep 16",
-          "downloads": 13,
-          "fullDate": "2025-09-16T00:00:00.000Z"
+          "date": "Sep 18",
+          "downloads": 6,
+          "fullDate": "2025-09-18T00:00:00.000Z"
         },
         {
-          "date": "Sep 23",
-          "downloads": 8,
-          "fullDate": "2025-09-23T00:00:00.000Z"
-        },
-        {
-          "date": "Sep 30",
+          "date": "Sep 25",
           "downloads": 5,
-          "fullDate": "2025-09-30T00:00:00.000Z"
+          "fullDate": "2025-09-25T00:00:00.000Z"
         },
         {
-          "date": "Oct 7",
-          "downloads": 7,
-          "fullDate": "2025-10-07T00:00:00.000Z"
-        },
-        {
-          "date": "Oct 14",
-          "downloads": 3,
-          "fullDate": "2025-10-14T00:00:00.000Z"
-        },
-        {
-          "date": "Oct 21",
+          "date": "Oct 2",
           "downloads": 9,
-          "fullDate": "2025-10-21T00:00:00.000Z"
+          "fullDate": "2025-10-02T00:00:00.000Z"
         },
         {
-          "date": "Oct 28",
-          "downloads": 13,
-          "fullDate": "2025-10-28T00:00:00.000Z"
-        },
-        {
-          "date": "Nov 4",
+          "date": "Oct 9",
           "downloads": 4,
-          "fullDate": "2025-11-04T00:00:00.000Z"
+          "fullDate": "2025-10-09T00:00:00.000Z"
         },
         {
-          "date": "Nov 11",
+          "date": "Oct 16",
+          "downloads": 5,
+          "fullDate": "2025-10-16T00:00:00.000Z"
+        },
+        {
+          "date": "Oct 23",
+          "downloads": 9,
+          "fullDate": "2025-10-23T00:00:00.000Z"
+        },
+        {
+          "date": "Oct 30",
+          "downloads": 10,
+          "fullDate": "2025-10-30T00:00:00.000Z"
+        },
+        {
+          "date": "Nov 6",
           "downloads": 6,
-          "fullDate": "2025-11-11T00:00:00.000Z"
+          "fullDate": "2025-11-06T00:00:00.000Z"
         },
         {
-          "date": "Nov 18",
+          "date": "Nov 13",
+          "downloads": 6,
+          "fullDate": "2025-11-13T00:00:00.000Z"
+        },
+        {
+          "date": "Nov 20",
           "downloads": 5,
-          "fullDate": "2025-11-18T00:00:00.000Z"
+          "fullDate": "2025-11-20T00:00:00.000Z"
         },
         {
-          "date": "Nov 25",
+          "date": "Nov 27",
           "downloads": 5,
-          "fullDate": "2025-11-25T00:00:00.000Z"
+          "fullDate": "2025-11-27T00:00:00.000Z"
         },
         {
-          "date": "Dec 2",
-          "downloads": 7,
-          "fullDate": "2025-12-02T00:00:00.000Z"
-        },
-        {
-          "date": "Dec 9",
-          "downloads": 4,
-          "fullDate": "2025-12-09T00:00:00.000Z"
-        },
-        {
-          "date": "Dec 16",
-          "downloads": 4,
-          "fullDate": "2025-12-16T00:00:00.000Z"
-        },
-        {
-          "date": "Dec 23",
-          "downloads": 3,
-          "fullDate": "2025-12-23T00:00:00.000Z"
-        },
-        {
-          "date": "Dec 30",
+          "date": "Dec 4",
           "downloads": 5,
-          "fullDate": "2025-12-30T00:00:00.000Z"
+          "fullDate": "2025-12-04T00:00:00.000Z"
         },
         {
-          "date": "Jan 6",
-          "downloads": 3,
-          "fullDate": "2026-01-06T00:00:00.000Z"
-        },
-        {
-          "date": "Jan 13",
+          "date": "Dec 11",
           "downloads": 4,
-          "fullDate": "2026-01-13T00:00:00.000Z"
+          "fullDate": "2025-12-11T00:00:00.000Z"
         },
         {
-          "date": "Jan 20",
-          "downloads": 3,
-          "fullDate": "2026-01-20T00:00:00.000Z"
-        },
-        {
-          "date": "Jan 27",
+          "date": "Dec 18",
           "downloads": 4,
-          "fullDate": "2026-01-27T00:00:00.000Z"
+          "fullDate": "2025-12-18T00:00:00.000Z"
         },
         {
-          "date": "Feb 3",
-          "downloads": 173,
-          "fullDate": "2026-02-03T00:00:00.000Z"
+          "date": "Dec 25",
+          "downloads": 3,
+          "fullDate": "2025-12-25T00:00:00.000Z"
         },
         {
-          "date": "Feb 10",
-          "downloads": 8,
-          "fullDate": "2026-02-10T00:00:00.000Z"
+          "date": "Jan 1",
+          "downloads": 6,
+          "fullDate": "2026-01-01T00:00:00.000Z"
         },
         {
-          "date": "Feb 17",
+          "date": "Jan 8",
+          "downloads": 2,
+          "fullDate": "2026-01-08T00:00:00.000Z"
+        },
+        {
+          "date": "Jan 15",
+          "downloads": 4,
+          "fullDate": "2026-01-15T00:00:00.000Z"
+        },
+        {
+          "date": "Jan 22",
+          "downloads": 5,
+          "fullDate": "2026-01-22T00:00:00.000Z"
+        },
+        {
+          "date": "Jan 29",
+          "downloads": 69,
+          "fullDate": "2026-01-29T00:00:00.000Z"
+        },
+        {
+          "date": "Feb 5",
+          "downloads": 110,
+          "fullDate": "2026-02-05T00:00:00.000Z"
+        },
+        {
+          "date": "Feb 12",
+          "downloads": 14,
+          "fullDate": "2026-02-12T00:00:00.000Z"
+        },
+        {
+          "date": "Feb 19",
           "downloads": 23,
-          "fullDate": "2026-02-17T00:00:00.000Z"
+          "fullDate": "2026-02-19T00:00:00.000Z"
         },
         {
-          "date": "Feb 24",
-          "downloads": 35,
-          "fullDate": "2026-02-24T00:00:00.000Z"
+          "date": "Feb 26",
+          "downloads": 25,
+          "fullDate": "2026-02-26T00:00:00.000Z"
         },
         {
-          "date": "Mar 3",
+          "date": "Mar 5",
           "downloads": 12,
-          "fullDate": "2026-03-03T00:00:00.000Z"
+          "fullDate": "2026-03-05T00:00:00.000Z"
         },
         {
-          "date": "Mar 10",
+          "date": "Mar 12",
           "downloads": 6,
-          "fullDate": "2026-03-10T00:00:00.000Z"
+          "fullDate": "2026-03-12T00:00:00.000Z"
         },
         {
-          "date": "Mar 17",
-          "downloads": 2,
-          "fullDate": "2026-03-17T00:00:00.000Z"
+          "date": "Mar 19",
+          "downloads": 3,
+          "fullDate": "2026-03-19T00:00:00.000Z"
         },
         {
-          "date": "Mar 24",
-          "downloads": 13,
-          "fullDate": "2026-03-24T00:00:00.000Z"
+          "date": "Mar 26",
+          "downloads": 12,
+          "fullDate": "2026-03-26T00:00:00.000Z"
         },
         {
-          "date": "Mar 31",
-          "downloads": 2,
-          "fullDate": "2026-03-31T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 7",
-          "downloads": 17,
-          "fullDate": "2026-04-07T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 14",
-          "downloads": 7,
-          "fullDate": "2026-04-14T00:00:00.000Z"
-        },
-        {
-          "date": "Apr 21",
+          "date": "Apr 2",
           "downloads": 16,
-          "fullDate": "2026-04-21T00:00:00.000Z"
+          "fullDate": "2026-04-02T00:00:00.000Z"
         },
         {
-          "date": "Apr 28",
-          "downloads": 13,
-          "fullDate": "2026-04-28T00:00:00.000Z"
-        },
-        {
-          "date": "May 5",
-          "downloads": 7,
-          "fullDate": "2026-05-05T00:00:00.000Z"
-        },
-        {
-          "date": "May 12",
-          "downloads": 6,
-          "fullDate": "2026-05-12T00:00:00.000Z"
-        },
-        {
-          "date": "May 19",
-          "downloads": 11,
-          "fullDate": "2026-05-19T00:00:00.000Z"
-        },
-        {
-          "date": "May 26",
-          "downloads": 14,
-          "fullDate": "2026-05-26T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 2",
-          "downloads": 3,
-          "fullDate": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 9",
-          "downloads": 10,
-          "fullDate": "2026-06-09T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 16",
-          "downloads": 4,
-          "fullDate": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 23",
-          "downloads": 18,
-          "fullDate": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "Jun 30",
+          "date": "Apr 9",
           "downloads": 5,
-          "fullDate": "2026-06-30T00:00:00.000Z"
+          "fullDate": "2026-04-09T00:00:00.000Z"
         },
         {
-          "date": "Jul 7",
-          "downloads": 0,
-          "fullDate": "2026-07-07T00:00:00.000Z"
+          "date": "Apr 16",
+          "downloads": 8,
+          "fullDate": "2026-04-16T00:00:00.000Z"
         },
         {
-          "date": "Jul 14",
-          "downloads": 2,
-          "fullDate": "2026-07-14T00:00:00.000Z"
+          "date": "Apr 23",
+          "downloads": 24,
+          "fullDate": "2026-04-23T00:00:00.000Z"
         },
         {
-          "date": "Jul 21",
-          "downloads": 14,
-          "fullDate": "2026-07-21T00:00:00.000Z"
-        },
-        {
-          "date": "Jul 28",
-          "downloads": 13,
-          "fullDate": "2026-07-28T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 4",
-          "downloads": 26,
-          "fullDate": "2026-08-04T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 11",
-          "downloads": 1,
-          "fullDate": "2026-08-11T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 18",
-          "downloads": 0,
-          "fullDate": "2026-08-18T00:00:00.000Z"
-        },
-        {
-          "date": "Aug 25",
-          "downloads": 10,
-          "fullDate": "2026-08-25T00:00:00.000Z"
-        },
-        {
-          "date": "Sep 1",
+          "date": "Apr 30",
           "downloads": 3,
-          "fullDate": "2026-09-01T00:00:00.000Z"
+          "fullDate": "2026-04-30T00:00:00.000Z"
         },
         {
-          "date": "Sep 8",
+          "date": "May 7",
+          "downloads": 6,
+          "fullDate": "2026-05-07T00:00:00.000Z"
+        },
+        {
+          "date": "May 14",
+          "downloads": 7,
+          "fullDate": "2026-05-14T00:00:00.000Z"
+        },
+        {
+          "date": "May 21",
+          "downloads": 12,
+          "fullDate": "2026-05-21T00:00:00.000Z"
+        },
+        {
+          "date": "May 28",
+          "downloads": 12,
+          "fullDate": "2026-05-28T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 4",
+          "downloads": 11,
+          "fullDate": "2026-06-04T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 11",
           "downloads": 2,
-          "fullDate": "2026-09-08T00:00:00.000Z"
+          "fullDate": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 18",
+          "downloads": 7,
+          "fullDate": "2026-06-18T00:00:00.000Z"
+        },
+        {
+          "date": "Jun 25",
+          "downloads": 16,
+          "fullDate": "2026-06-25T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 2",
+          "downloads": 4,
+          "fullDate": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 9",
+          "downloads": 0,
+          "fullDate": "2026-07-09T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 16",
+          "downloads": 5,
+          "fullDate": "2026-07-16T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 23",
+          "downloads": 24,
+          "fullDate": "2026-07-23T00:00:00.000Z"
+        },
+        {
+          "date": "Jul 30",
+          "downloads": 13,
+          "fullDate": "2026-07-30T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 6",
+          "downloads": 14,
+          "fullDate": "2026-08-06T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 13",
+          "downloads": 0,
+          "fullDate": "2026-08-13T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 20",
+          "downloads": 0,
+          "fullDate": "2026-08-20T00:00:00.000Z"
+        },
+        {
+          "date": "Aug 27",
+          "downloads": 11,
+          "fullDate": "2026-08-27T00:00:00.000Z"
+        },
+        {
+          "date": "Sep 3",
+          "downloads": 3,
+          "fullDate": "2026-09-03T00:00:00.000Z"
+        },
+        {
+          "date": "Sep 10",
+          "downloads": 3,
+          "fullDate": "2026-09-10T00:00:00.000Z"
         }
       ],
-      "lastUpdated": "2026-09-11T01:44:19.024Z"
+      "lastUpdated": "2026-09-12T01:50:19.110Z"
     }
   }
 }
